@@ -1,0 +1,71 @@
+/* Clean Marquee Animation */
+.marquee-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.marquee-container::before,
+.marquee-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 30%; /* Changed from 100px to 30% */
+  z-index: 2;
+  pointer-events: none;
+}
+
+.marquee-container::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.538) 50%, rgba(255, 255, 255, 0) 100%);
+}
+
+.marquee-container::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.586) 50%, rgba(255, 255, 255, 0) 100%);
+}
+
+.marquee-content {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  padding: 10px 0;
+  animation: scroll 10s linear infinite; /* Reduced from 25s to 20s */
+}
+
+.marquee-content img {
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.marquee-content img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .marquee-container::before,
+  .marquee-container::after {
+    width: 30%; /* Keep 30% on mobile too */
+  }
+  
+  .marquee-content {
+    gap: 30px;
+    animation-duration: 10s; /* Reduced from 20s to 15s */
+  }
+}
+
+/* Pause on hover */
+.marquee-container:hover .marquee-content {
+  animation-play-state: paused;
+} 

@@ -1,29 +1,29 @@
 import React from 'react'
-import { useCart } from '../../../context/CartContext'
+// import { useCart } from '../../../context/CartContext'
 
 const TopDestinations = () => {
-    const { addToCart, openCart } = useCart()
+    // const { addToCart, openCart } = useCart()
 
-    const handleAddToCart = (tourType) => {
-        let item
-        if (tourType === 'france') {
-            item = {
-                id: 'france-castles-coastline',
-                name: 'France Castles and Coastline Journey - 9 Nights 10 Days',
-                price: 206.00,
-                image: 'https://cdn.prod.website-files.com/672d8f75dabc438e6086ed62/677b820df1bcc26bf9985e0a_France%20Three.webp'
-            }
-        } else if (tourType === 'bhutan') {
-            item = {
-                id: 'bhutan-sacred-valleys',
-                name: 'Bhutan Sacred Valleys and Mountains - 8 Nights 9 Days',
-                price: 155.00,
-                image: 'https://cdn.prod.website-files.com/672d8f75dabc438e6086ed62/6776735f29739c12056feee5_Bhutan%20Image%20Three.webp'
-            }
-        }
-        addToCart(item)
-        openCart()
-    }
+    // const handleAddToCart = (tourType) => {
+    //     let item
+    //     if (tourType === 'france') {
+    //         item = {
+    //             id: 'france-castles-coastline',
+    //             name: 'France Castles and Coastline Journey - 9 Nights 10 Days',
+    //             price: 206.00,
+    //             image: 'https://cdn.prod.website-files.com/672d8f75dabc438e6086ed62/677b820df1bcc26bf9985e0a_France%20Three.webp'
+    //         }
+    //     } else if (tourType === 'bhutan') {
+    //         item = {
+    //             id: 'bhutan-sacred-valleys',
+    //             name: 'Bhutan Sacred Valleys and Mountains - 8 Nights 9 Days',
+    //             price: 155.00,
+    //             image: 'https://cdn.prod.website-files.com/672d8f75dabc438e6086ed62/6776735f29739c12056feee5_Bhutan%20Image%20Three.webp'
+    //         }
+    //     }
+    //     addToCart(item)
+    //     openCart()
+    // }
 
     return (
         <section
@@ -70,7 +70,7 @@ const TopDestinations = () => {
                                                 |&nbsp;Loire Valley to Nice|&nbsp;Departure from Nice
                                             </p>
                                             <button
-                                                onClick={() => handleAddToCart('france')}
+                                                // onClick={() => handleAddToCart('france')}
                                                 className="button w-button"
                                                 style={{ cursor: 'pointer' }}
                                             >

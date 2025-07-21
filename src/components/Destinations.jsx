@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 // Complete categorized destination data structure with all packages and images
@@ -44,7 +44,20 @@ const destinationsData = {
                 duration: '8-10 Days',
                 featured: '',
                 discount: '14% off'
-            }
+            },
+            {
+                id: 98,
+                href: '/product/rajasthan-customized',
+                image: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=820&h=1030&fit=crop',
+                srcSet: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=820&h=1030&fit=crop 820w',
+                title: 'Rajasthan Tour',
+                price: '₹22,000',
+                originalPrice: '₹26,000',
+                rating: '4.8 (289)',
+                duration: '6-8 Days',
+                featured: 'Featured',
+                discount: '15% off'
+            },
         ],
         'International': [
             {
@@ -1045,113 +1058,30 @@ const DestinationCard = ({ destination, category }) => {
     )
 }
 
-// AutoSlider Component
-const AutoSlider = ({ destinations, category }) => {
-    const [currentSlide, setCurrentSlide] = useState(0)
-    const sliderRef = useRef(null)
-
-    // Calculate slides per view based on screen size
-    const getSlidesPerView = () => {
-        if (typeof window !== 'undefined') {
-            if (window.innerWidth < 768) return 1
-            if (window.innerWidth < 1024) return 2
-            if (window.innerWidth < 1440) return 3
-            return 4
-        }
-        return 3
-    }
-
-    const [slidesPerView, setSlidesPerView] = useState(getSlidesPerView())
-
-    // Create infinite loop by duplicating destinations
-    const createInfiniteSlides = (destinations) => {
-        if (!destinations || destinations.length === 0) return []
-        // Duplicate the array to create seamless loop
-        return [...destinations, ...destinations, ...destinations]
-    }
-
-    const infiniteDestinations = createInfiniteSlides(destinations)
-    const totalSlides = destinations ? destinations.length : 0
-
-    // Auto-slide functionality with infinite loop
-    useEffect(() => {
-        const interval = setInterval(() => {
-            if (totalSlides > 0) {
-                setCurrentSlide((prev) => {
-                    const nextSlide = prev + 1
-                    // When we reach the end of original slides, reset to beginning
-                    if (nextSlide >= totalSlides) {
-                        return 0
-                    }
-                    return nextSlide
-                })
-            }
-        }, 3000) // Change slide every 3 seconds
-
-        return () => clearInterval(interval)
-    }, [totalSlides])
-
-    // Handle window resize
-    useEffect(() => {
-        const handleResize = () => {
-            setSlidesPerView(getSlidesPerView())
-        }
-
-        window.addEventListener('resize', handleResize)
-        return () => window.removeEventListener('resize', handleResize)
-    }, [])
-
-    // Reset slide when destinations change
-    useEffect(() => {
-        setCurrentSlide(0)
-    }, [destinations])
+// Simple Grid Component
+const DestinationGrid = ({ destinations, category }) => {
+    // Show only first 4 destinations
+    const displayDestinations = destinations ? destinations.slice(0, 4) : []
 
     if (!destinations || destinations.length === 0) {
         return <div className="no-destinations">No packages available</div>
     }
 
-    const slideWidth = 100 / slidesPerView
-    const translateX = -currentSlide * slideWidth
-
     return (
-        <div className="destination-slider-container">
-            <div 
-                className="destination-slider-wrapper"
-                ref={sliderRef}
-                style={{
-                    transform: `translateX(${translateX}%)`,
-                    transition: 'transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)'
-                }}
-            >
-                {infiniteDestinations.map((destination, index) => (
-                    <div 
-                        key={`${destination.id}-${index}`}
-                        className="destination-slide"
-                        style={{ width: `${slideWidth}%` }}
-                    >
-                        <DestinationCard
-                            destination={destination}
-                            category={category}
-                        />
-                    </div>
-                ))}
-            </div>
-            
-            {/* Slide Indicators - only show for original slides */}
-            <div className="slider-indicators">
-                {Array.from({ length: totalSlides }).map((_, index) => (
-                    <button
-                        key={index}
-                        className={`slider-indicator ${currentSlide === index ? 'active' : ''}`}
-                        onClick={() => setCurrentSlide(index)}
+        <div className="destination-grid">
+            {displayDestinations.map((destination) => (
+                <div key={destination.id} className="destination-grid-item">
+                    <DestinationCard
+                        destination={destination}
+                        category={category}
                     />
-                ))}
-            </div>
+                </div>
+            ))}
         </div>
     )
 }
 
-// SubTabContent Component with Slider
+// SubTabContent Component with Grid
 const SubTabContent = ({ mainTab, subTab, activeMainTab, activeSubTab, destinations, category }) => {
     const isActive = activeMainTab === mainTab && activeSubTab === subTab
 
@@ -1160,8 +1090,8 @@ const SubTabContent = ({ mainTab, subTab, activeMainTab, activeSubTab, destinati
             className={`w-tab-pane ${isActive ? 'w--tab-active' : ''}`}
             style={{ display: isActive ? 'block' : 'none' }}
         >
-            <AutoSlider destinations={destinations} category={category} />
-                                                            </div>
+            <DestinationGrid destinations={destinations} category={category} />
+        </div>
     )
 }
 
@@ -1182,29 +1112,14 @@ const Destinations = () => {
     return (
         <>
             <style jsx>{`
-                .destination-slider-container {
-                    position: relative;
-                    overflow: hidden;
-                    padding: 0 20px;
+                .destination-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                    gap: 20px;
+                    padding: 20px 0;
                 }
 
-                .destination-slider-wrapper {
-                    display: flex;
-                    width: 100%;
-                    align-items: center;
-                }
-
-                .destination-slide {
-                    flex: 0 0 auto;
-                    padding: 0 10px;
-                    box-sizing: border-box;
-                    display: flex;
-                    justify-content: center;
-                }
-
-                .destination-slide-item {
-                    width: 100%;
-                    height: 100%;
+                .destination-grid-item {
                     display: flex;
                     justify-content: center;
                 }
@@ -1212,32 +1127,6 @@ const Destinations = () => {
                 .destination-cards-two {
                     max-width: 100%;
                     margin: 0 auto;
-                }
-
-                .slider-indicators {
-                    display: flex;
-                    justify-content: center;
-                    gap: 8px;
-                    margin-top: 30px;
-                }
-
-                .slider-indicator {
-                    width: 10px;
-                    height: 10px;
-                    border-radius: 50%;
-                    border: none;
-                    padding: 0 !important;
-                     background-color:#007bff70 ;
-                    cursor: pointer;
-                    transition: background-color 0.3s ease;
-                }
-
-                .slider-indicator.active {
-                    background-color:#007bff ;
-                }
-
-                .slider-indicator:hover {
-                    background-color: rgba(255, 255, 255, 0.6);
                 }
 
                 .no-destinations {
@@ -1248,8 +1137,17 @@ const Destinations = () => {
                 }
 
                 @media (max-width: 768px) {
-                    .destination-slide {
-                        padding: 0 5px;
+                    .destination-grid {
+                        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                        gap: 15px;
+                        padding: 15px 0;
+                    }
+                }
+
+                @media (max-width: 480px) {
+                    .destination-grid {
+                        grid-template-columns: 1fr;
+                        gap: 15px;
                     }
                 }
             `}</style>

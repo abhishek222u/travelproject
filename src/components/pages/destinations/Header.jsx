@@ -1,7 +1,8 @@
 import { ChevronDown } from 'lucide-react'
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../../../assets/logo.png'
+// import logo from '../../../assets/logo.png'
+import logo from '../../../assets/tripofai_logo2.svg'
 
 const Header = () => {
 

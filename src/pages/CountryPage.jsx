@@ -1129,13 +1129,13 @@ const CountryPage = () => {
 
     const handleBookingSubmit = async (formData) => {
         const result = await submitBooking(formData)
-        
+
         if (result.success) {
             // Navigate to thank you page with booking details
-            navigate('/thank-you', { 
-                state: { 
-                    bookingDetails: result.bookingDetails 
-                } 
+            navigate('/thank-you', {
+                state: {
+                    bookingDetails: result.bookingDetails
+                }
             })
         } else {
             // Handle error - you could show a toast notification here
@@ -1163,8 +1163,8 @@ const CountryPage = () => {
                                     {countryData.overview}
                                 </p>
                                 <p>
-                                    Discover the unique charm and unforgettable experiences that {countryData.name} has to offer. 
-                                    From breathtaking natural wonders to vibrant cities, there's something for every traveler 
+                                    Discover the unique charm and unforgettable experiences that {countryData.name} has to offer.
+                                    From breathtaking natural wonders to vibrant cities, there's something for every traveler
                                     seeking adventure, culture, and unforgettable memories.
                                 </p>
                                 <p>‍</p>
@@ -1175,8 +1175,8 @@ const CountryPage = () => {
                                 </ul>
                                 <p>‍</p>
                                 <p>
-                                    Plan your perfect trip to {countryData.name} with our expert travel advice. 
-                                    Contact our travel specialists for personalized itineraries and exclusive deals 
+                                    Plan your perfect trip to {countryData.name} with our expert travel advice.
+                                    Contact our travel specialists for personalized itineraries and exclusive deals
                                     that will make your journey truly extraordinary.
                                 </p>
                             </div>
@@ -1209,7 +1209,7 @@ const CountryPage = () => {
                                                     <div className="spacial-card-location">
                                                         {countryData.name}, {countryData.region}
                                                     </div>
-                                                    <div className="small-text" style={{ 
+                                                    <div className="small-text" style={{
                                                         color: displayPackage.visaRequirement === 'Visa-Free' || displayPackage.visaRequirement === 'No Visa Required' ? '#4CAF50' : '#FF9800',
                                                         marginTop: '5px'
                                                     }}>
@@ -1314,20 +1314,17 @@ const CountryPage = () => {
                     </div>
                 </section>
             )} */}
-            <BestPlace />
+            {/* <BestPlace /> */}
             <Feature />
-            
-            
-            
             <Footer />
-            
+
             <BookingPopup
                 isOpen={isBookingOpen}
                 onClose={closeBooking}
                 packageData={currentPackage}
                 onSubmit={handleBookingSubmit}
             />
-            
+
             <style jsx>{`
                 .additional-packages {
                     padding: 60px 0;

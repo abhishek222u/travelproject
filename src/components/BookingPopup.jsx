@@ -226,10 +226,6 @@ const BookingPopup = ({ isOpen, onClose, packageData, onSubmit }) => {
                             )}
                         </button>
                     </form>
-
-                    <div className="booking-footer">
-                        <p>We'll contact you within 24 hours to confirm your booking.</p>
-                    </div>
                 </div>
             </div>
         </div>

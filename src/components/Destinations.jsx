@@ -1006,11 +1006,111 @@ const subTabs = [
 
 // DestinationCard Component (keeping the same design)
 const DestinationCard = ({ destination, category }) => {
-    const { href, image, srcSet, title, price, originalPrice, rating, duration, featured, discount } = destination
+    const {image, srcSet, title, price, originalPrice, rating, duration, featured, discount } = destination
+
+    // Extract country name from title for routing
+    const getCountryFromTitle = (title) => {
+        const countryMap = {
+            'Thailand Tour': 'thailand',
+            'Vietnam Tour': 'vietnam',
+            'Bali Tour': 'bali',
+            'Dubai Tour': 'dubai',
+            'Singapore Tour': 'singapore',
+            'Egypt Tour': 'egypt',
+            'Australia Tour': 'australia',
+            'Europe Tour': 'europe',
+            'Japan Tour': 'japan',
+            'Maldives Tour': 'maldives',
+            'Turkey Tour': 'turkey',
+            'USA Tour': 'usa',
+            'UK Tour': 'uk',
+            'Switzerland Tour': 'switzerland',
+            'China Tour': 'china',
+            'Malaysia Tour': 'malaysia',
+            'Thailand Honeymoon': 'thailand',
+            'Vietnam Honeymoon': 'vietnam',
+            'Bali Honeymoon': 'bali',
+            'Maldives Honeymoon': 'maldives',
+            'Switzerland Honeymoon': 'switzerland',
+            'Thailand Customized': 'thailand',
+            'Vietnam Customized': 'vietnam',
+            'Bali Customized': 'bali',
+            'Dubai Customized': 'dubai',
+            'Singapore Customized': 'singapore',
+            'Egypt Customized': 'egypt',
+            'Australia Customized': 'australia',
+            'Europe Customized': 'europe',
+            'Japan Customized': 'japan',
+            'Maldives Customized': 'maldives',
+            'Turkey Customized': 'turkey',
+            'USA Customized': 'usa',
+            'UK Customized': 'uk',
+            'Switzerland Customized': 'switzerland',
+            'China Customized': 'china',
+            'Malaysia Customized': 'malaysia',
+            'Thailand Group': 'thailand',
+            'Vietnam Group': 'vietnam',
+            'Bali Group': 'bali',
+            'Dubai Group': 'dubai',
+            'Singapore Group': 'singapore',
+            'Egypt Group': 'egypt',
+            'Australia Group': 'australia',
+            'Europe Group': 'europe',
+            'Japan Group': 'japan',
+            'Maldives Group': 'maldives',
+            'Turkey Group': 'turkey',
+            'USA Group': 'usa',
+            'UK Group': 'uk',
+            'Switzerland Group': 'switzerland',
+            'China Group': 'china',
+            'Malaysia Group': 'malaysia',
+            // Domestic destinations
+            'Rajasthan Tour': 'rajasthan',
+            'Himachal Tour': 'himachal',
+            'Chardham Yatra': 'chardham',
+            'Spiti Valley Tour': 'spiti',
+            'Ladakh Bike Tour': 'ladakh',
+            'Kerala Tour': 'kerala',
+            'Kashmir Tour': 'kashmir',
+            'Uttarakhand Tour': 'uttarakhand',
+            'Goa Tour': 'goa',
+            'Gujarat Tour': 'gujarat',
+            'Manali Honeymoon': 'manali',
+            'Kashmir Honeymoon': 'kashmir',
+            'Gulmarg Honeymoon': 'gulmarg',
+            'Mount Abu Honeymoon': 'mount-abu',
+            'Mussoorie Honeymoon': 'mussoorie',
+            'Shimla Honeymoon': 'shimla',
+            'Rishikesh Rafting & Camping': 'rishikesh',
+            'Manali to Srinagar Bike Expedition': 'manali-srinagar',
+            'Winter Spiti Backpacking': 'spiti-winter',
+            'Triund Trek with Bir Paragliding': 'triund',
+            'Jaipur-Jodhpur-Jaisalmer Desert Adventure': 'rajasthan-desert',
+            'Nepal Himalayas Trekking (Annapurna Circuit)': 'nepal',
+            'New Zealand Extreme Sports (Queenstown)': 'newzealand',
+            'Costa Rica Rainforest Ziplining and Surfing': 'costa-rica',
+            'Iceland Glacier Hiking and Northern Lights': 'iceland',
+            'South Africa Safari and Shark Cage Diving': 'south-africa',
+            'Kerala Corporate Backwater Conference': 'kerala-corporate',
+            'Imphal Business Meeting & Cultural Tour': 'imphal',
+            'Mount Abu Incentive Retreat': 'mount-abu-retreat',
+            'Himachal Conference with Team-Building': 'himachal-conference',
+            'Rajasthan Exhibition and Networking Package': 'rajasthan-exhibition',
+            'Singapore Corporate Conference': 'singapore-corporate',
+            'Dubai Incentive Meeting': 'dubai-incentive',
+            'USA Business Exhibition (East Coast)': 'usa-business',
+            'Europe Multi-City Conference Tour': 'europe-conference',
+            'Australia Incentive and Exhibition': 'australia-incentive'
+        };
+        return countryMap[title] || 'thailand'; // fallback to thailand
+    };
+
+    const countrySlug = getCountryFromTitle(title);
+    const detailPageUrl = `/countries/${countrySlug}`;
 
     return (
         <div className="destination-slide-item">
-            <a href={href} className="destination-cards-two w-inline-block">
+            <Link to={detailPageUrl} className="destination-cards-two w-inline-block">
                                                 <div className="destination-cards-two-image">
                                                     <img
                                                         width="299.5"
@@ -1053,7 +1153,7 @@ const DestinationCard = ({ destination, category }) => {
                                                 </div>
                     <div className="offer-text off">{discount}</div>
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </div>
     )
 }

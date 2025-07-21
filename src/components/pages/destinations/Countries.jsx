@@ -75,7 +75,7 @@ const Countries = () => {
                                                 width={300}
                                                 height={413}
                                                 alt="Egypt"
-                                                src="https://images.unsplash.com/photo-1539650116574-75c0c6d73aeb?w=300&h=413&fit=crop"
+                                                src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=300&h=413&fit=crop"
                                                 loading="lazy"
                                                 className="image-full-width"
                                             />

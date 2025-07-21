@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from "../assets/TRIPOFAI.svg"
 
 const Footer = () => {
     return (
@@ -99,7 +100,7 @@ const Footer = () => {
                                 width={1290}
                                 loading="lazy"
                                 alt="TripoFai"
-                                src="https://cdn.prod.website-files.com/66920f2a1e03460f2a6e88a5/6729979d78530d529332ff2c_explOreza.svg"
+                                src={logo}
                             />
                         </div>
                     </div>
@@ -107,7 +108,7 @@ const Footer = () => {
             </section>
             <section className="footer-bottom footer-two-bottom">
                 <div className="w-layout-blockcontainer container w-container">
-                
+
                     <div className="footer-bottom-locations">
                         <a
                             href="https://exploreza.webflow.io/countries/usa"

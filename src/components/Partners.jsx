@@ -36,37 +36,43 @@ const Partners = () => {
   ];
 
   return (
-    <section className="home-three-partners full-width-partners">
-      <div className="marquee-one">
-        <div className="marquee-container">
-          <div className="marquee-content">
-            {/* First set of logos */}
-            {partnerLogos.map((logo, index) => (
-              <img
-                key={`first-${index}`}
-                width={logo.width}
-                height={logo.height}
-                alt={logo.alt}
-                src={logo.src}
-                loading="lazy"
-              />
-            ))}
-            {/* Duplicate set for seamless loop */}
-            {partnerLogos.map((logo, index) => (
-              <img
-                key={`second-${index}`}
-                width={logo.width}
-                height={logo.height}
-                alt={logo.alt}
-                src={logo.src}
-                loading="lazy"
-              />
-            ))}
+    <section className="home-three-partners">
+      <div className="w-layout-blockcontainer container w-container">
+        <section>
+          <div className="w-layout-blockcontainer container w-container">
+            <div className="w-layout-hflex marquee-one">
+              <div className="marquee-container">
+                <div className="marquee-content">
+                  {/* First set of logos */}
+                  {partnerLogos.map((logo, index) => (
+                    <img
+                      key={`first-${index}`}
+                      width={logo.width}
+                      height={logo.height}
+                      alt={logo.alt}
+                      src={logo.src}
+                      loading="lazy"
+                    />
+                  ))}
+                  {/* Duplicate set for seamless loop */}
+                  {partnerLogos.map((logo, index) => (
+                    <img
+                      key={`second-${index}`}
+                      width={logo.width}
+                      height={logo.height}
+                      alt={logo.alt}
+                      src={logo.src}
+                      loading="lazy"
+                    />
+                  ))}
+                </div>
+              </div>
+              <div className="marquee-text">
+                Trusted by 15,000+ founders &amp; business owners
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="marquee-text">
-          Trusted by 15,000+ founders &amp; business owners
-        </div>
+        </section>
       </div>
     </section>
   )

@@ -14,13 +14,13 @@ const DestinationsPage = () => {
 
     const handleBookingSubmit = async (formData) => {
         const result = await submitBooking(formData)
-        
+
         if (result.success) {
             // Navigate to thank you page with booking details
-            navigate('/thank-you', { 
-                state: { 
-                    bookingDetails: result.bookingDetails 
-                } 
+            navigate('/thank-you', {
+                state: {
+                    bookingDetails: result.bookingDetails
+                }
             })
         } else {
             // Handle error - you could show a toast notification here
@@ -36,7 +36,7 @@ const DestinationsPage = () => {
             <Countries />
             <TopDestinations />
             <Footer />
-            
+
             <BookingPopup
                 isOpen={isBookingOpen}
                 onClose={closeBooking}

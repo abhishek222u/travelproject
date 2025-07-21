@@ -5,11 +5,13 @@ import DestinationsPage from './pages/DestinationsPage'
 import CountryPage from './pages/CountryPage'
 import ThankYouPage from './pages/ThankYouPage'
 import { BookingProvider } from './context/BookingContext'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
   return (
     <BookingProvider>
       <Router>
+        <ScrollToTop />
         <div className='page-wrappers'>
           <Routes>
             <Route path="/" element={<LandingPage />} />

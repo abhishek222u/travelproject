@@ -11,6 +11,7 @@ import TestimonialSlider from '../components/Testimonial'
 import BookingPopup from '../components/BookingPopup'
 import { useBooking } from '../context/BookingContext'
 import { useNavigate } from 'react-router-dom'
+import InstagramReels from '../components/InstagramReels'
 
 const LandingPage = () => {
   const { isBookingOpen, currentPackage, closeBooking, submitBooking } = useBooking()
@@ -43,6 +44,7 @@ const LandingPage = () => {
       <PopularCities />
       <TestimonialSlider />
       <Services />
+      <InstagramReels/>
       <Footer />
       
       <BookingPopup

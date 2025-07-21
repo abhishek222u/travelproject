@@ -85,14 +85,15 @@ const Footer = () => {
                             </div>
                             <div className="w-layout-vflex footer-two-right-box">
                                 <a href="tel:8881234567" className="link-style-five">
-                                    (888) 123 4567
+                                    +91 9818149806
                                 </a>
-                                <a href="mailto:contact@exemple.com" className="link-style-five">
-                                    contact@exemple.com
+                                <a href="mailto:contact@tripofai.com" className="link-style-five">
+                                    contact@tripofai.com
                                 </a>
-                                <div className="text-light-white">
+                                {/* <div className="text-light-white">
                                     410 Sandtown, California 94001, United State of America
-                                </div>
+                                </div> */}
+                                <img src="https://www.tripzygo.in/iata%20logo.webp" />
                             </div>
                         </div>
                         <div className="w-layout-vflex footer-logo">

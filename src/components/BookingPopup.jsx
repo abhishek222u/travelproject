@@ -29,7 +29,7 @@ const BookingPopup = ({ isOpen, onClose, packageData, onSubmit }) => {
         } else {
             document.body.style.overflow = 'unset'
         }
-        
+
         return () => {
             document.body.style.overflow = 'unset'
         }
@@ -37,7 +37,7 @@ const BookingPopup = ({ isOpen, onClose, packageData, onSubmit }) => {
 
     const validateForm = () => {
         const newErrors = {}
-        
+
         if (!formData.name.trim()) newErrors.name = 'Name is required'
         if (!formData.email.trim()) {
             newErrors.email = 'Email is required'
@@ -46,18 +46,18 @@ const BookingPopup = ({ isOpen, onClose, packageData, onSubmit }) => {
         }
         if (!formData.phone.trim()) newErrors.phone = 'Phone number is required'
         if (!formData.location.trim()) newErrors.location = 'Location is required'
-        
+
         setErrors(newErrors)
         return Object.keys(newErrors).length === 0
     }
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        
+
         if (!validateForm()) return
-        
+
         setIsSubmitting(true)
-        
+
         try {
             await onSubmit(formData)
         } catch (error) {
@@ -73,7 +73,7 @@ const BookingPopup = ({ isOpen, onClose, packageData, onSubmit }) => {
             ...prev,
             [name]: value
         }))
-        
+
         // Clear error when user starts typing
         if (errors[name]) {
             setErrors(prev => ({
@@ -91,7 +91,7 @@ const BookingPopup = ({ isOpen, onClose, packageData, onSubmit }) => {
                 <div className="booking-popup-header">
                     <div className="booking-popup-title">
                         <Package className="booking-icon" />
-                        <h2>Book Your Dream Trip</h2>
+                        <h2 style={{ color: 'white' }}>Book Your Dream Trip</h2>
                     </div>
                     <button onClick={onClose} className="booking-popup-close">
                         <X size={24} />
@@ -211,8 +211,8 @@ const BookingPopup = ({ isOpen, onClose, packageData, onSubmit }) => {
 
 
 
-                        <button 
-                            type="submit" 
+                        <button
+                            type="submit"
                             className="booking-submit-btn"
                             disabled={isSubmitting}
                         >

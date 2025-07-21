@@ -46,14 +46,14 @@ const Header = () => {
                 <img src={logo} alt="logo" />
               </Link>
               <a href="tel:8881234567" className="link-style-six tab-display-off">
-                (888) 123 4567
+                +91 9818149806 
               </a>
               <div className="navbar-one-border tab-display-off" />
               <a
-                href="mailto:contact@exemple.com"
+                href="mailto:contact@tripofai.com"
                 className="link-style-six tab-display-off"
               >
-                contact@exemple.com
+                contact@tripofai.com
               </a>
             </div>
             <div className="w-layout-hflex nav-one-right">

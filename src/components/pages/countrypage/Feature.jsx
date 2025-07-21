@@ -133,13 +133,13 @@ const Feature = () => {
                                                 Thimphu to Punakha | Departure from Punakha
                                             </p>
                                         </div>
-                                                                                    <button
-                                                onClick={() => handleBookNow('bhutan')}
-                                                className="button w-button"
-                                                style={{ cursor: 'pointer' }}
-                                            >
-                                                Book Now
-                                            </button>
+                                        <button
+                                            onClick={() => handleBookNow('bhutan')}
+                                            className="button w-button"
+                                            style={{ cursor: 'pointer' }}
+                                        >
+                                            Book Now
+                                        </button>
                                     </div>
                                     <div className="popular-card-image-wrapper">
                                         <img

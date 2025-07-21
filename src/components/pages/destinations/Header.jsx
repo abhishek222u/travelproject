@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
 import { ChevronDown } from 'lucide-react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../../../assets/logo.png'
 
@@ -217,7 +217,7 @@ const Header = () => {
                             </div>
                         </nav>
                         <div className="block">
-                            <a 
+                            {/* <a 
                                 href="tel:+1-555-123-4567"
                                 className="button w-button"
                                 style={{ 
@@ -227,7 +227,7 @@ const Header = () => {
                                 }}
                             >
                                 Call Now
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                 </div>

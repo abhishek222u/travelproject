@@ -5119,7 +5119,7 @@ blockquote {
 
 .error-message {
   color: #b60707;
-  background-color: #fee;
+  /* background-color: #fee; */
   border-radius: 4px;
 }
 
@@ -13611,7 +13611,7 @@ blockquote {
 .form-group input.error,
 .form-group textarea.error {
   border-color: #e74c3c;
-  background: #fef5f5;
+  /* background: #fef5f5; */
 }
 
 .form-group textarea {

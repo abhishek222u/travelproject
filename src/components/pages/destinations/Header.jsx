@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { ChevronDown } from 'lucide-react'
 import { Link } from 'react-router-dom'
-import logo from '../../../assets/logo.png'
+// import logo from '../../../assets/logo.png'
+import logo from '../../../assets/tripofai_logo2.svg'
 
 const Header = () => {
 

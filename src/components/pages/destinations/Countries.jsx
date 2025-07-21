@@ -636,8 +636,8 @@ const Countries = () => {
                     </div>
                     <p className="no-margin text-dark">
                         Our destination experts are available to assist you at Call &nbsp;
-                        <a href="tel:8881234567" className="text-orange">
-                            (888) 123 4567
+                        <a href="tel:+91 9818149806" className="text-orange">
+                            +91 9818149806
                         </a>{" "}
                         or{" "}
                         <a href="/contact-one" className="links-style-one">

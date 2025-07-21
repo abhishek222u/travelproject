@@ -2256,7 +2256,7 @@ textarea.w-select {
   --font-size--h4: 24px;
   --font-size--h5: 20px;
   --font-size--h6: 16px;
-  --color--brand: #046CB8;
+  --color--brand: #046cb8;
   --color--white: white;
   --color--button-hover: #3f8bc2;
   --color--dark-blue: white;
@@ -3970,7 +3970,7 @@ blockquote {
 }
 
 .links-style-one:hover {
-  color: #046CB8
+  color: #046cb8;
 }
 
 .marquee-train {
@@ -4675,7 +4675,7 @@ blockquote {
 }
 
 .link-style-three:hover {
-  color: #046CB8
+  color: #046cb8;
 }
 
 .link-style-three.last-link-border-off {
@@ -5030,7 +5030,7 @@ blockquote {
 }
 
 .links-style-two:hover {
-  color: #046CB8
+  color: #046cb8;
 }
 
 .home-one-honeymoon-cards-wrapper {
@@ -5429,7 +5429,7 @@ blockquote {
 }
 
 .link-style-four:hover {
-  color: #046CB8
+  color: #046cb8;
 }
 
 .link-style-four.last-link-border-off {
@@ -5519,7 +5519,7 @@ blockquote {
 }
 
 .tab-link.w--current {
-  color: #046CB8;
+  color: #046cb8;
   padding: 3px 5px;
   border-radius: 10px;
 }
@@ -5617,7 +5617,7 @@ blockquote {
 }
 
 .link-style-five:hover {
-  color: #046CB8
+  color: #046cb8;
 }
 
 .top-destinations-main {
@@ -7568,7 +7568,7 @@ blockquote {
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
   padding-top: 300px;
-  padding-bottom: 210px;
+  padding-bottom: 360px;
 }
 
 .destination-showcase {
@@ -10207,8 +10207,6 @@ blockquote {
     font-size: 70px;
   }
 
- 
-
   .destination-slider-mask {
     width: 40%;
   }
@@ -10367,7 +10365,7 @@ blockquote {
     --font-size--h4: 22px;
     --font-size--h5: 18px;
     --font-size--h6: 15px;
-    --color--brand: #046CB8;
+    --color--brand: #046cb8;
     --color--button-hover: #dd512d;
     --color--dark-blue: #051f46;
     --color--bedge: #b19f70;
@@ -11777,7 +11775,7 @@ blockquote {
     --font-size--h4: 20px;
     --font-size--h5: 16px;
     --font-size--h6: 14px;
-    --color--brand: #046CB8;
+    --color--brand: #046cb8;
     --color--button-hover: #dd512d;
     --color--dark-blue: #051f46;
     --color--bedge: #b19f70;
@@ -13347,15 +13345,15 @@ blockquote {
   .slider-track {
     width: 200%;
   }
-  
+
   .slider-item {
     flex: 0 0 50%;
   }
-  
+
   .slider-nav-prev {
     left: -20px;
   }
-  
+
   .slider-nav-next {
     right: -20px;
   }
@@ -13365,25 +13363,25 @@ blockquote {
   .slider-track {
     width: 100%;
   }
-  
+
   .slider-item {
     flex: 0 0 100%;
   }
-  
+
   .slider-nav-btn {
     width: 40px;
     height: 40px;
     font-size: 20px;
   }
-  
+
   .slider-nav-prev {
     left: -15px;
   }
-  
+
   .slider-nav-next {
     right: -15px;
   }
-  
+
   .slider-dots {
     margin-top: 20px;
   }
@@ -13395,11 +13393,11 @@ blockquote {
     height: 35px;
     font-size: 18px;
   }
-  
+
   .slider-nav-prev {
     left: -10px;
   }
-  
+
   .slider-nav-next {
     right: -10px;
   }
@@ -13471,7 +13469,7 @@ blockquote {
 }
 
 .booking-icon {
-  color: #FFD700;
+  color: #ffd700;
 }
 
 .booking-popup-close {
@@ -13695,39 +13693,39 @@ blockquote {
   .booking-popup-overlay {
     padding: 10px;
   }
-  
+
   .booking-popup-container {
     max-height: 95vh;
   }
-  
+
   .booking-popup-header {
     padding: 20px 20px 15px;
   }
-  
+
   .booking-popup-title h2 {
     font-size: 1.5rem;
   }
-  
+
   .booking-popup-content {
     padding: 20px;
   }
-  
+
   .package-preview {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .package-image {
     width: 100%;
     height: 200px;
     align-self: center;
   }
-  
+
   .form-row {
     flex-direction: column;
     gap: 15px;
   }
-  
+
   .package-meta {
     justify-content: center;
   }
@@ -13737,15 +13735,15 @@ blockquote {
   .booking-popup-header {
     padding: 15px;
   }
-  
+
   .booking-popup-title h2 {
     font-size: 1.3rem;
   }
-  
+
   .booking-popup-content {
     padding: 15px;
   }
-  
+
   .package-preview {
     padding: 15px;
   }
@@ -13777,7 +13775,7 @@ blockquote {
   position: absolute;
   width: 12px;
   height: 12px;
-  background: #FFD700;
+  background: #ffd700;
   animation: confetti-fall 4s linear infinite;
   border-radius: 2px;
   opacity: 0.9;
@@ -13819,10 +13817,8 @@ blockquote {
   max-height: 95vh;
   padding: 40px;
   text-align: center;
-  box-shadow: 
-    0 25px 50px rgba(0, 0, 0, 0.25),
-    0 0 0 1px rgba(255, 255, 255, 0.05),
-    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25),
+    0 0 0 1px rgba(255, 255, 255, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.3);
   transform: translateY(50px);
   opacity: 0;
   transition: all 0.8s ease;
@@ -13845,44 +13841,47 @@ blockquote {
 }
 
 @keyframes successIconFloat {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 .success-icon-bg {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #4CAF50, #45a049, #66BB6A);
+  background: linear-gradient(135deg, #4caf50, #45a049, #66bb6a);
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
   position: relative;
   animation: bounce 1s ease infinite, glow 2s ease-in-out infinite alternate;
-  box-shadow: 
-    0 0 20px rgba(76, 175, 80, 0.3),
-    0 0 40px rgba(76, 175, 80, 0.2),
+  box-shadow: 0 0 20px rgba(76, 175, 80, 0.3), 0 0 40px rgba(76, 175, 80, 0.2),
     0 0 60px rgba(76, 175, 80, 0.1);
 }
 
 @keyframes glow {
   0% {
-    box-shadow: 
-      0 0 20px rgba(76, 175, 80, 0.3),
-      0 0 40px rgba(76, 175, 80, 0.2),
+    box-shadow: 0 0 20px rgba(76, 175, 80, 0.3), 0 0 40px rgba(76, 175, 80, 0.2),
       0 0 60px rgba(76, 175, 80, 0.1);
   }
   100% {
-    box-shadow: 
-      0 0 30px rgba(76, 175, 80, 0.5),
-      0 0 60px rgba(76, 175, 80, 0.3),
+    box-shadow: 0 0 30px rgba(76, 175, 80, 0.5), 0 0 60px rgba(76, 175, 80, 0.3),
       0 0 90px rgba(76, 175, 80, 0.2);
   }
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0);
   }
   40% {
@@ -13916,7 +13915,7 @@ blockquote {
   left: 50%;
   width: 120px;
   height: 120px;
-  border: 3px solid #4CAF50;
+  border: 3px solid #4caf50;
   border-radius: 50%;
   transform: translate(-50%, -50%);
   animation: ripple 2s ease-out infinite;
@@ -13959,7 +13958,8 @@ blockquote {
   -webkit-text-fill-color: white !important;
   border-radius: 10px;
   background-clip: text;
-  animation: titleSlideUp 0.8s ease 0.5s both, gradientShift 4s ease-in-out infinite;
+  animation: titleSlideUp 0.8s ease 0.5s both,
+    gradientShift 4s ease-in-out infinite;
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   letter-spacing: 5px;
   width: max-content;
@@ -13979,7 +13979,8 @@ blockquote {
 }
 
 @keyframes gradientShift {
-  0%, 100% {
+  0%,
+  100% {
     background: linear-gradient(135deg, #667eea, #764ba2, #e73c7e, #23a6d5);
   }
   50% {
@@ -14015,23 +14016,26 @@ blockquote {
   margin-bottom: 30px;
   text-align: left;
   border: 1px solid rgba(102, 126, 234, 0.1);
-  box-shadow: 
-    0 10px 25px rgba(0, 0, 0, 0.05),
-    0 0 0 1px rgba(255, 255, 255, 0.5),
-    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05),
+    0 0 0 1px rgba(255, 255, 255, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.8);
   animation: summarySlideIn 0.8s ease 0.9s both;
   position: relative;
   overflow: hidden;
 }
 
 .booking-summary::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.1), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(102, 126, 234, 0.1),
+    transparent
+  );
   animation: shimmer 2s ease-in-out infinite;
 }
 
@@ -14047,8 +14051,12 @@ blockquote {
 }
 
 @keyframes shimmer {
-  0% { left: -100%; }
-  100% { left: 100%; }
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
 }
 
 .booking-summary h3 {
@@ -14108,8 +14116,6 @@ blockquote {
   line-height: 1.5;
   margin: 0;
 }
-
-
 
 .action-buttons {
   display: flex;
@@ -14217,33 +14223,33 @@ blockquote {
     padding: 25px 20px;
     max-width: 98vw;
   }
-  
+
   .thank-you-title {
     font-size: 2.2rem;
   }
-  
+
   .thank-you-subtitle {
     font-size: 1.1rem;
   }
-  
+
   .action-buttons {
     flex-direction: column;
     align-items: center;
     gap: 12px;
   }
-  
+
   .btn-primary,
   .btn-secondary {
     width: 100%;
     max-width: 280px;
     min-width: auto;
   }
-  
+
   .summary-grid {
     grid-template-columns: 1fr;
     gap: 15px;
   }
-  
+
   .booking-summary {
     padding: 20px;
   }
@@ -14255,37 +14261,37 @@ blockquote {
     max-width: 98vw;
     border-radius: 20px;
   }
-  
+
   .thank-you-title {
     font-size: 1.9rem;
     letter-spacing: -0.5px;
   }
-  
+
   .thank-you-subtitle {
     font-size: 1rem;
   }
-  
+
   .success-icon-bg {
     width: 100px;
     height: 100px;
   }
-  
+
   .btn-primary,
   .btn-secondary {
     padding: 14px 24px;
     font-size: 1rem;
     min-width: auto;
   }
-  
+
   .booking-summary {
     padding: 18px;
     margin-bottom: 25px;
   }
-  
+
   .summary-grid {
     gap: 12px;
   }
-  
+
   .summary-item {
     padding: 12px;
   }

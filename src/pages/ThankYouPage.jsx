@@ -7,7 +7,7 @@ const ThankYouPage = () => {
     const location = useLocation()
     const [isVisible, setIsVisible] = useState(false)
     const [showConfetti, setShowConfetti] = useState(false)
-    
+
     // Get booking details from location state
     const bookingDetails = location.state?.bookingDetails
 
@@ -15,7 +15,7 @@ const ThankYouPage = () => {
         // Animate elements on load
         setTimeout(() => setIsVisible(true), 100)
         setTimeout(() => setShowConfetti(true), 500)
-        
+
         // Auto redirect after 10 seconds
         const timer = setTimeout(() => {
             // navigate('/')
@@ -36,9 +36,9 @@ const ThankYouPage = () => {
         <div className="thank-you-page">
             {showConfetti && <div className="confetti-container">
                 {[...Array(50)].map((_, i) => (
-                    <div 
-                        key={i} 
-                        className="confetti-piece" 
+                    <div
+                        key={i}
+                        className="confetti-piece"
                         style={{
                             left: `${Math.random() * 100}%`,
                             animationDelay: `${Math.random() * 3}s`,
@@ -114,7 +114,7 @@ const ThankYouPage = () => {
 
                     {/* Contact Info */}
                     <div className="contact-info">
-                        <p>Need help? Call <strong>+1 (800) 123-TRAVEL</strong> or email <strong>contact@travelagency.com</strong></p>
+                        <p>Need help? Call <strong>+91 9818149806 </strong> or email <strong>contact@tripofai.com</strong></p>
                     </div>
                 </div>
 

@@ -90,9 +90,6 @@ const Footer = () => {
                                 <a href="mailto:contact@tripofai.com" className="link-style-five">
                                     contact@tripofai.com
                                 </a>
-                                {/* <div className="text-light-white">
-                                    410 Sandtown, California 94001, United State of America
-                                </div> */}
                                 <img src="https://www.tripzygo.in/iata%20logo.webp" />
                             </div>
                         </div>
@@ -109,7 +106,6 @@ const Footer = () => {
             </section>
             <section className="footer-bottom footer-two-bottom">
                 <div className="w-layout-blockcontainer container w-container">
-
                     <div className="footer-bottom-locations">
                         <a
                             href="https://exploreza.webflow.io/countries/usa"

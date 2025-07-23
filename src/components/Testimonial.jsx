@@ -6,10 +6,10 @@ const TestimonialSlider = () => {
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="flex flex-col items-center">
           <div className="text-center">
-            <p className="text-lg sm:text-xl lg:text-2xl font-medium text-gray-600 font-pj">
+            <p className="text-lg sm:text-xl lg:text-xl font-medium text-gray-600 font-pj">
               2,157 people have said how good Rareblocks
             </p>
-            <h2 className="mt-4 !text-4xl sm:!text-5xl lg:!text-6xl font-medium text-gray-900 font-pj">
+            <h2 className="mt-4 !text-4xl lg:!text-5xl font-medium text-gray-900 font-pj">
               Our happy clients say about us
             </h2>
           </div>
@@ -24,7 +24,7 @@ const TestimonialSlider = () => {
             </a>
           </div>
 
-          <div className="relative mt-10 md:mt-24 md:order-2">
+          <div className="relative mt-10 md:mt-20 md:order-2">
             <div className="absolute -inset-x-1 inset-y-16 md:-inset-x-2 md:-inset-y-6">
               <div
                 className="w-full h-full max-w-5xl mx-auto rounded-3xl opacity-30 blur-lg filter"

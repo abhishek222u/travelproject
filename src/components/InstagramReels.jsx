@@ -20,6 +20,12 @@ const InstagramReels = () => {
             image: 'https://scontent.cdninstagram.com/v/t51.82787-15/521605017_17844481785536154_8550125261482198832_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=105&ig_cache_key=MzY4MDk0NTQ5MjkyMjQyNzQwMw%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjYwOHgxMDgwLnNkciJ9&_nc_ohc=c9QBeYPuncIQ7kNvwEGnrDp&_nc_oc=AdngmPCwlDv_TIhiyVPjTSISneVv7-VVMT3ameJN3ZrUbv-YojAIvjWdwnBCidgcO1paN5laAeCpad41m6fKD8Gf&_nc_ad=z-m&_nc_cid=2034&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=UZZtBPJS78KviqYjZrtMKg&oh=00_AfTAA5Z6wgnKOAqFxeujsSib2t10cXmsngzRhOF_CPvOKA&oe=68845181',
             instagramUrl: 'https://www.instagram.com/reel/DMVWGxfN2gL/?utm_source=ig_web_copy_link&igsh=ZWRhOGZzejlrMjFy',
             title: '12 Jyotirlingas'
+        },
+        {
+            id: 4,
+            image: 'https://scontent.cdninstagram.com/v/t51.82787-15/521373794_17844664983536154_5550339114122322380_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=101&ig_cache_key=MzY4MTY3Mjc0NDE1NjcwNzQ5MQ%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjYwOHgxMDgwLnNkciJ9&_nc_ohc=nWksHiaEsukQ7kNvwHKNmDk&_nc_oc=Adl__KInoHNwJjT-zxYd4fQVqSEbPKbtpkx-0WYmEgV11j4RgvJYESI8rFv1W4Zy8CkNJcbHUXv1zVRuGScmmyPy&_nc_ad=z-m&_nc_cid=2034&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=trEjmasuruM_Ahio6OMPzg&oh=00_AfSCJdREKIS2pb--0z76n-Aa979Fm_LpPkQ7GixOCkniHg&oe=68868395',
+            instagramUrl: 'https://www.instagram.com/reel/DMX7dq-srqj/?utm_source=ig_web_copy_link&igsh=MWlsZHQ4d21pa2RwaA==',
+            title: 'Dubai Marina'
         }
     ];
 
@@ -32,8 +38,8 @@ const InstagramReels = () => {
     return (
         <div className="luxury-container">
             <div className="header-section">
-                <h2>DISCOVER LUXURY TRAVEL EXPERIENCES ON INSTAGRAM</h2>
-                <p className="subtitle">Follow us for exclusive destinations and premium travel content</p>
+                <h2>OUR INSTAGRAM TRAVEL POSTS</h2>
+                <p className="subtitle">Check out our latest travel adventures and destination highlights</p>
             </div>
             
             <div className="posts-grid">

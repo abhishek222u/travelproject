@@ -986,6 +986,221 @@ const destinationsData = {
                 discount: '14% off'
             }
         ]
+    },
+    'Spiritual': {
+        name: 'Spiritual Category',
+        'Domestic': [
+            {
+                id: 73,
+                href: '/product/varanasi-spiritual',
+                image: 'https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=820&h=1030&fit=crop',
+                srcSet: 'https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=820&h=1030&fit=crop 820w',
+                title: 'Varanasi Spiritual Journey',
+                price: '₹18,000',
+                originalPrice: '₹21,000',
+                rating: '4.9 (456)',
+                duration: '5-6 Days',
+                featured: 'Featured',
+                discount: '14% off'
+            },
+            {
+                id: 74,
+                href: '/product/bodh-gaya-meditation',
+                image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=820&h=1030&fit=crop',
+                srcSet: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=820&h=1030&fit=crop 820w',
+                title: 'Bodh Gaya Meditation Retreat',
+                price: '₹15,000',
+                originalPrice: '₹18,000',
+                rating: '4.8 (234)',
+                duration: '4-5 Days',
+                featured: '',
+                discount: '17% off'
+            },
+            {
+                id: 75,
+                href: '/product/amritsar-golden-temple',
+                image: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=820&h=1030&fit=crop',
+                srcSet: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=820&h=1030&fit=crop 820w',
+                title: 'Amritsar Golden Temple',
+                price: '₹12,000',
+                originalPrice: '₹14,000',
+                rating: '4.7 (189)',
+                duration: '3-4 Days',
+                featured: '',
+                discount: '14% off'
+            },
+            {
+                id: 76,
+                href: '/product/rishikesh-yoga',
+                image: 'https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?w=820&h=1030&fit=crop',
+                srcSet: 'https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?w=820&h=1030&fit=crop 820w',
+                title: 'Rishikesh Yoga & Meditation',
+                price: '₹10,000',
+                originalPrice: '₹12,000',
+                rating: '4.9 (345)',
+                duration: '5-7 Days',
+                featured: 'Featured',
+                discount: '17% off'
+            },
+            {
+                id: 77,
+                href: '/product/kedarnath-yatra',
+                image: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=820&h=1030&fit=crop',
+                srcSet: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=820&h=1030&fit=crop 820w',
+                title: 'Kedarnath Yatra',
+                price: '₹25,000',
+                originalPrice: '₹29,000',
+                rating: '4.8 (267)',
+                duration: '6-8 Days',
+                featured: '',
+                discount: '14% off'
+            },
+            {
+                id: 78,
+                href: '/product/badrinath-dham',
+                image: 'https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=820&h=1030&fit=crop',
+                srcSet: 'https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=820&h=1030&fit=crop 820w',
+                title: 'Badrinath Dham',
+                price: '₹22,000',
+                originalPrice: '₹26,000',
+                rating: '4.7 (198)',
+                duration: '5-7 Days',
+                featured: '',
+                discount: '15% off'
+            },
+            {
+                id: 79,
+                href: '/product/gangotri-yamunotri',
+                image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=820&h=1030&fit=crop',
+                srcSet: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=820&h=1030&fit=crop 820w',
+                title: 'Gangotri & Yamunotri',
+                price: '₹20,000',
+                originalPrice: '₹24,000',
+                rating: '4.8 (234)',
+                duration: '6-8 Days',
+                featured: '',
+                discount: '17% off'
+            },
+            {
+                id: 80,
+                href: '/product/vaishno-devi',
+                image: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=820&h=1030&fit=crop',
+                srcSet: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=820&h=1030&fit=crop 820w',
+                title: 'Vaishno Devi Yatra',
+                price: '₹8,000',
+                originalPrice: '₹9,500',
+                rating: '4.6 (178)',
+                duration: '3-4 Days',
+                featured: '',
+                discount: '16% off'
+            }
+        ],
+        'International': [
+            {
+                id: 81,
+                href: '/product/tibet-buddhist',
+                image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=820&h=1030&fit=crop',
+                srcSet: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=820&h=1030&fit=crop 820w',
+                title: 'Tibet Buddhist Pilgrimage',
+                price: '$800',
+                originalPrice: '$950',
+                rating: '4.8 (234)',
+                duration: '8-10 Days • Visa Required',
+                featured: 'Featured',
+                discount: '16% off'
+            },
+            {
+                id: 82,
+                href: '/product/nepal-buddhist',
+                image: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=820&h=1030&fit=crop',
+                srcSet: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=820&h=1030&fit=crop 820w',
+                title: 'Nepal Buddhist Temples',
+                price: '$600',
+                originalPrice: '$710',
+                rating: '4.7 (189)',
+                duration: '6-8 Days • Visa Required',
+                featured: '',
+                discount: '15% off'
+            },
+            {
+                id: 83,
+                href: '/product/sri-lanka-buddhist',
+                image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=820&h=1030&fit=crop',
+                srcSet: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=820&h=1030&fit=crop 820w',
+                title: 'Sri Lanka Buddhist Heritage',
+                price: '$500',
+                originalPrice: '$590',
+                rating: '4.8 (167)',
+                duration: '5-7 Days • Visa Required',
+                featured: '',
+                discount: '15% off'
+            },
+            {
+                id: 84,
+                href: '/product/cambodia-angkor',
+                image: 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=820&h=1030&fit=crop',
+                srcSet: 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=820&h=1030&fit=crop 820w',
+                title: 'Cambodia Angkor Temples',
+                price: '$450',
+                originalPrice: '$530',
+                rating: '4.7 (145)',
+                duration: '4-6 Days • Visa Required',
+                featured: '',
+                discount: '15% off'
+            },
+            {
+                id: 85,
+                href: '/product/myanmar-pagan',
+                image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=820&h=1030&fit=crop',
+                srcSet: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=820&h=1030&fit=crop 820w',
+                title: 'Myanmar Pagan Temples',
+                price: '$550',
+                originalPrice: '$650',
+                rating: '4.6 (123)',
+                duration: '5-7 Days • Visa Required',
+                featured: '',
+                discount: '15% off'
+            },
+            {
+                id: 86,
+                href: '/product/japan-zen',
+                image: 'https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=820&h=1030&fit=crop',
+                srcSet: 'https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=820&h=1030&fit=crop 820w',
+                title: 'Japan Zen Temples',
+                price: '$1,200',
+                originalPrice: '$1,400',
+                rating: '4.8 (198)',
+                duration: '7-9 Days • Visa Required',
+                featured: '',
+                discount: '14% off'
+            },
+            {
+                id: 87,
+                href: '/product/thailand-buddhist',
+                image: 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=820&h=1030&fit=crop',
+                srcSet: 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=820&h=1030&fit=crop 820w',
+                title: 'Thailand Buddhist Temples',
+                price: '$400',
+                originalPrice: '$470',
+                rating: '4.7 (167)',
+                duration: '4-6 Days • Visa-Free',
+                featured: '',
+                discount: '15% off'
+            },
+            {
+                id: 88,
+                href: '/product/indonesia-bali-temples',
+                image: 'https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?w=820&h=1030&fit=crop',
+                srcSet: 'https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?w=820&h=1030&fit=crop 820w',
+                title: 'Bali Temple Tour',
+                price: '$450',
+                originalPrice: '$530',
+                rating: '4.8 (189)',
+                duration: '5-7 Days • Visa-Free',
+                featured: '',
+                discount: '15% off'
+            }
+        ]
     }
 }
 
@@ -995,7 +1210,8 @@ const mainTabs = [
     { id: 'Customized', label: 'Customized' },
     { id: 'Honeymoon', label: 'Honeymoon' },
     { id: 'Adventure', label: 'Adventure' },
-    { id: 'MICE', label: 'MICE' }
+    { id: 'MICE', label: 'MICE' },
+    { id: 'Spiritual', label: 'Spiritual' }
 ]
 
 // Sub-category tabs
@@ -1100,7 +1316,23 @@ const DestinationCard = ({ destination, category }) => {
             'Dubai Incentive Meeting': 'dubai-incentive',
             'USA Business Exhibition (East Coast)': 'usa-business',
             'Europe Multi-City Conference Tour': 'europe-conference',
-            'Australia Incentive and Exhibition': 'australia-incentive'
+            'Australia Incentive and Exhibition': 'australia-incentive',
+            'Varanasi Spiritual Journey': 'varanasi',
+            'Bodh Gaya Meditation Retreat': 'bodh-gaya',
+            'Amritsar Golden Temple': 'amritsar',
+            'Rishikesh Yoga & Meditation': 'rishikesh-yoga',
+            'Kedarnath Yatra': 'kedarnath',
+            'Badrinath Dham': 'badrinath',
+            'Gangotri & Yamunotri': 'gangotri',
+            'Vaishno Devi Yatra': 'vaishno-devi',
+            'Tibet Buddhist Pilgrimage': 'tibet',
+            'Nepal Buddhist Temples': 'nepal-buddhist',
+            'Sri Lanka Buddhist Heritage': 'sri-lanka',
+            'Cambodia Angkor Temples': 'cambodia',
+            'Myanmar Pagan Temples': 'myanmar',
+            'Japan Zen Temples': 'japan-zen',
+            'Thailand Buddhist Temples': 'thailand-buddhist',
+            'Bali Temple Tour': 'bali-temple'
         };
         return countryMap[title] || 'thailand'; // fallback to thailand
     };

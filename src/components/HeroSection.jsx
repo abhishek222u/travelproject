@@ -29,13 +29,13 @@ const HeroSection = () => {
       description: "Experience the raw power of volcanic landscapes and traverse vast desert terrains under endless starlit skies."
     },
     {
-      image: web4,
+      image: web5,
       title: "Mountain Peaks",
       subtitle: "Reach new heights",
       description: "Conquer majestic mountain peaks and witness breathtaking panoramic views from the world's highest summits."
     },
     {
-      image: web5,
+      image: web4,
       title: "Ocean Depths",
       subtitle: "Marine exploration",
       description: "Dive into the mysterious depths of the ocean and discover vibrant coral reefs and marine life."

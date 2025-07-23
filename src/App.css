@@ -7065,8 +7065,8 @@ blockquote {
 }
 
 .home-three-popular-tour {
-  padding-top: 110px;
-  padding-bottom: 120px;
+  /* padding-top: 50px; */
+  padding-bottom: 60px;
 }
 
 .destination-card-two-name {
@@ -7120,7 +7120,7 @@ blockquote {
 
 .home-three-top-destinations {
   padding-top: 110px;
-  padding-bottom: 120px;
+  padding-bottom: 110px;
 }
 
 .home-three-about-authors {
@@ -7184,7 +7184,7 @@ blockquote {
 }
 
 .home-three-service {
-  padding-top: 110px;
+  padding-top: 60px;
   padding-bottom: 120px;
 }
 

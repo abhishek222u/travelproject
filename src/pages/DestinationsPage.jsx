@@ -34,7 +34,7 @@ const DestinationsPage = () => {
             <Banner />
             <Partners />
             <Countries />
-            <TopDestinations />
+            {/* <TopDestinations /> */}
             <Footer />
 
             <BookingPopup

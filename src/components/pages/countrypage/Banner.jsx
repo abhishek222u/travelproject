@@ -15,7 +15,7 @@ const Banner = ({displayName, backgroundImage}) => {
                 <div className="w-layout-vflex country-main">
                     <h1
                         data-w-id="a2957703-87fb-047b-4b73-4d61e278d100"
-                        className="no-margin text-color-white"
+                        className="no-margin text-color-white hero-big-text text-color-white"
                         style={{
                             opacity: 1,
                             transform:
@@ -25,7 +25,7 @@ const Banner = ({displayName, backgroundImage}) => {
                     >
                         {displayName}
                     </h1>
-                    <p
+                    {/* <p
                         data-w-id="d1cb151c-ed1c-ae17-5f01-0a2cf0557209"
                         className="no-margin text-color-white country-hero-description"
                         style={{
@@ -37,7 +37,7 @@ const Banner = ({displayName, backgroundImage}) => {
                     >
                         Embark on an extraordinary journey to discover captivating landscapes, vibrant cultures,
                         and unforgettable experiences that will create memories to last a lifetime.
-                    </p>
+                    </p> */}
                 </div>
             </div>
             <div className="country-hero-overlay" />

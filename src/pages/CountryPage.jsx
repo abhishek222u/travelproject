@@ -86,7 +86,7 @@ const CountryPage = () => {
                 region: 'Asia',
                 image: 'https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?w=500&h=600&fit=crop',
                 bannerImage: 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=1920&h=1080&fit=crop',
-                overview: 'Discover the Land of Smiles with its stunning beaches, vibrant culture, delicious cuisine, and warm hospitality. From bustling Bangkok to serene islands, Thailand offers diverse experiences for every traveler.',
+                overview: 'discover the Land of Smiles with its stunning beaches, vibrant culture, delicious cuisine, and warm hospitality. From bustling Bangkok to serene islands, Thailand offers diverse experiences for every traveler.',
                 highlights: [
                     'Explore the vibrant streets of Bangkok',
                     'Relax on pristine beaches in Phuket and Koh Samui',
@@ -343,7 +343,7 @@ const CountryPage = () => {
                 name: 'Switzerland',
                 region: 'Europe',
                 image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=600&fit=crop',
-                bannerImage: 'https://images.unsplash.com/photo-1527668752968-14dc92a24311?w=1920&h=1080&fit=crop',
+                bannerImage: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&h=1080&fit=crop',
                 overview: 'Experience the breathtaking beauty of Switzerland with its majestic Alps, pristine lakes, and charming cities. Perfect for adventure and relaxation.',
                 highlights: [
                     'Ski in world-famous Alpine resorts',
@@ -1157,13 +1157,13 @@ const CountryPage = () => {
                 <div className="w-layout-blockcontainer container w-container">
                     <div className="w-layout-hflex country-overview-main">
                         <div className="w-layout-vflex country-overview-text">
-                            <h2 className="no-margin">Country overview</h2>
+                            <h2 className="no-margin">country overview</h2>
                             <div className="w-richtext">
                                 <p>
                                     {countryData.overview}
                                 </p>
                                 <p>
-                                    Discover the unique charm and unforgettable experiences that {countryData.name} has to offer.
+                                    discover the unique charm and unforgettable experiences that {countryData.name} has to offer.
                                     From breathtaking natural wonders to vibrant cities, there's something for every traveler
                                     seeking adventure, culture, and unforgettable memories.
                                 </p>
@@ -1175,7 +1175,7 @@ const CountryPage = () => {
                                 </ul>
                                 <p>‍</p>
                                 <p>
-                                    Plan your perfect trip to {countryData.name} with our expert travel advice.
+                                    plan your perfect trip to {countryData.name} with our expert travel advice.
                                     Contact our travel specialists for personalized itineraries and exclusive deals
                                     that will make your journey truly extraordinary.
                                 </p>
@@ -1219,7 +1219,7 @@ const CountryPage = () => {
                                                 <div className="w-layout-vflex card-three-text-box">
                                                     <div className="w-layout-hflex card-three-price">
                                                         <div className="heading-style-h4 text-color-white">
-                                                            Starting from {displayPackage.price}
+                                                            starting from {displayPackage.price}
                                                         </div>
                                                     </div>
                                                     <div className="offer-small-text">

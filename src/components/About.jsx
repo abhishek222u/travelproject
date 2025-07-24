@@ -112,15 +112,15 @@ const About = () => {
                             <div className="w-layout-hflex home-three-counter-wrap">
                                 <div className="w-layout-vflex home-three-counter-column">
                                     <div className="heading-style-h3 text-orange">120+</div>
-                                    <div className="menu-font">Tour available</div>
+                                    <div className="menu-font">tour available</div>
                                 </div>
                                 <div className="w-layout-vflex home-three-counter-column">
                                     <div className="heading-style-h3 text-orange">20+</div>
-                                    <div className="menu-font">New destinations</div>
+                                    <div className="menu-font">new destinations</div>
                                 </div>
                                 <div className="w-layout-vflex home-three-counter-column">
                                     <div className="heading-style-h3 text-orange">15+</div>
-                                    <div className="menu-font">Years experience</div>
+                                    <div className="menu-font">years experience</div>
                                 </div>
                             </div>
                         </AnimatedElement>

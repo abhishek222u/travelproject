@@ -35,10 +35,10 @@ const TestimonialSlider = () => {
               />
             </div>
 
-            <div className="relative grid max-w-lg grid-cols-1 gap-4 mx-auto md:max-w-none lg:gap-6 xl:gap-10 md:grid-cols-2 lg:grid-cols-3">
+            <div className="relative grid max-w-lg grid-cols-1 gap-4 mx-auto md:max-w-none lg:gap-6 xl:gap-10 md:grid-cols-2 lg:grid-cols-4">
               {/* First Testimonial */}
-              <div className="flex flex-col overflow-hidden bg-white shadow-xl h-80 sm:h-96">
-                <div className="flex flex-col justify-between flex-1 p-4 sm:p-6 lg:py-8 lg:px-7">
+              <div className="flex flex-col overflow-hidden bg-white shadow-xl h-62 sm:h-72">
+                <div className="flex flex-col justify-between flex-1 p-3 sm:p-4 lg:py-6 lg:px-6">
                   <div className="flex-1">
                     <div className="flex items-center">
                       {[...Array(5)].map((_, i) => (
@@ -55,7 +55,7 @@ const TestimonialSlider = () => {
                     </div>
 
                     {/* <blockquote className="flex-1 mt-8"> */}
-                    <p className="!text-base sm:!text-lg !leading-relaxed text-gray-900 font-pj !mt-4 sm:!mt-6 tracking-wider">
+                    <p className="!text-base sm:!text-sm !leading-relaxed text-gray-900 font-pj !mt-2 sm:!mt-3 tracking-wider">
                       "You made it so simple. My new site is so much faster and
                       easier to work with than my old site. I just choose the
                       page, make the change."
@@ -65,16 +65,16 @@ const TestimonialSlider = () => {
 
                   <div className="flex items-center">
                     <img
-                      className="flex-shrink-0 object-cover rounded-full w-12 h-12 sm:w-16 sm:h-16"
+                    className="flex-shrink-0 object-cover rounded-full w-10 h-10 sm:w-12 sm:h-12"
                       src="https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-1.png"
                       alt="Leslie Alexander"
                     />
                     <div className="ml-3 sm:ml-4">
-                      <p className="text-base sm:text-lg font-bold text-gray-900 font-pj">
+                      <p className="!mb-0 text-base sm:text-md font-bold text-gray-900 font-pj">
                         Leslie Alexander
                       </p>
-                      <p className="mt-0.5 text-sm sm:text-base font-pj text-gray-600">
-                        Freelance React Developer
+                      <p className="!mb-0 text-sm sm:text-base font-pj text-gray-600">
+                        Freelance
                       </p>
                     </div>
                   </div>
@@ -82,8 +82,8 @@ const TestimonialSlider = () => {
               </div>
 
               {/* Second Testimonial */}
-              <div className="flex flex-col overflow-hidden bg-white shadow-xl h-80 sm:h-96">
-                <div className="flex flex-col justify-between flex-1 p-4 sm:p-6 lg:py-8 lg:px-7">
+              <div className="flex flex-col overflow-hidden bg-white shadow-xl h-62 sm:h-72">
+                <div className="flex flex-col justify-between flex-1 p-3 sm:p-4 lg:py-6 lg:px-6">
                   <div className="flex-1">
                     <div className="flex items-center">
                       {[...Array(5)].map((_, i) => (
@@ -100,7 +100,7 @@ const TestimonialSlider = () => {
                     </div>
 
                     {/* <blockquote className="flex-1 mt-8"> */}
-                    <p className="!text-base sm:!text-lg !leading-relaxed text-gray-900 font-pj !mt-4 sm:!mt-6 tracking-wider">
+                    <p className="!text-base sm:!text-sm !leading-relaxed text-gray-900 font-pj !mt-2 sm:!mt-3 tracking-wider">
                       "Simply the best. Better than all the rest. I'd recommend
                       this product to beginners and advanced users."
                     </p>
@@ -109,15 +109,15 @@ const TestimonialSlider = () => {
 
                   <div className="flex items-center">
                     <img
-                      className="flex-shrink-0 object-cover rounded-full w-12 h-12 sm:w-16 sm:h-16"
+                      className="flex-shrink-0 object-cover rounded-full w-10 h-10 sm:w-12 sm:h-12"
                       src="https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-2.png"
                       alt="Jacob Jones"
                     />
                     <div className="ml-3 sm:ml-4">
-                      <p className="text-base sm:text-lg font-bold text-gray-900 font-pj">
+                      <p className="!mb-0 text-base sm:text-md font-bold text-gray-900 font-pj">
                         Jacob Jones
                       </p>
-                      <p className="mt-0.5 text-sm sm:text-base font-pj text-gray-600">
+                      <p className="!mb-0 text-sm sm:text-base font-pj text-gray-600">
                         Digital Marketer
                       </p>
                     </div>
@@ -126,8 +126,52 @@ const TestimonialSlider = () => {
               </div>
 
               {/* Third Testimonial */}
-              <div className="flex flex-col overflow-hidden bg-white shadow-xl h-80 sm:h-96">
-                <div className="flex flex-col justify-between flex-1 p-4 sm:p-6 lg:py-8 lg:px-7">
+              <div className="flex flex-col overflow-hidden bg-white shadow-xl h-62 sm:h-72">
+                <div className="flex flex-col justify-between flex-1 p-3 sm:p-4 lg:py-6 lg:px-6">
+                  <div className="flex-1">
+                    <div className="flex items-center">     
+                      {[...Array(5)].map((_, i) => (
+                        <svg
+                          key={i}
+                          className="w-5 h-5 sm:w-6 sm:h-6 text-[#FDB241]"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                      ))}
+                    </div>
+
+                    {/* <blockquote className="flex-1 mt-8"> */}
+                    <p className="!text-base sm:!text-sm !leading-relaxed text-gray-900 font-pj !mt-2 sm:!mt-3 tracking-wider">
+                      "I cannot believe that I have got a brand new landing page
+                      after getting Omega. It was super easy to edit and publish."
+                    </p>
+                    {/* </blockquote> */}
+                  </div>
+
+                  <div className="flex items-center">
+                    <img
+                      className="flex-shrink-0 object-cover rounded-full w-10 h-10 sm:w-12 sm:h-12"
+                      src="https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-female.png"
+                      alt="Jenny Wilson"
+                    />
+                    <div className="ml-3 sm:ml-4">
+                      <p className="!mb-0 text-base sm:text-md font-bold text-gray-900 font-pj">
+                        Jenny Wilson
+                      </p>
+                      <p className="!mb-0 text-sm sm:text-base font-pj text-gray-600">
+                        Graphic Designer
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Fourth Testimonial */}
+              <div className="flex flex-col overflow-hidden bg-white shadow-xl h-62 sm:h-72">
+                <div className="flex flex-col justify-between flex-1 p-3 sm:p-4 lg:py-6 lg:px-6">
                   <div className="flex-1">
                     <div className="flex items-center">
                       {[...Array(5)].map((_, i) => (
@@ -144,25 +188,24 @@ const TestimonialSlider = () => {
                     </div>
 
                     {/* <blockquote className="flex-1 mt-8"> */}
-                    <p className="!text-base sm:!text-lg !leading-relaxed text-gray-900 font-pj !mt-4 sm:!mt-6 tracking-wider">
-                      "I cannot believe that I have got a brand new landing page
-                      after getting Omega. It was super easy to edit and publish."
+                    <p className="!text-base sm:!text-sm !leading-relaxed text-gray-900 font-pj !mt-2 sm:!mt-3 tracking-wider">
+                      "Amazing experience with this travel platform! The booking process was seamless and the customer support was exceptional. Highly recommend!"
                     </p>
                     {/* </blockquote> */}
                   </div>
 
                   <div className="flex items-center">
-                    <img
-                      className="flex-shrink-0 object-cover rounded-full w-12 h-12 sm:w-16 sm:h-16"
-                      src="https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-female.png"
-                      alt="Jenny Wilson"
-                    />
-                    <div className="ml-3 sm:ml-4">
-                      <p className="text-base sm:text-lg font-bold text-gray-900 font-pj">
-                        Jenny Wilson
+                                         <img
+                       className="flex-shrink-0 object-cover rounded-full w-10 h-10 sm:w-12 sm:h-12"
+                       src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww"
+                       alt="Robert Chen"
+                     />
+                    <div className="ml-3 sm:ml-2">
+                      <p className="!mb-0 text-base sm:text-md font-bold text-gray-900 font-pj">
+                        Robert Chen
                       </p>
-                      <p className="mt-0.5 text-sm sm:text-base font-pj text-gray-600">
-                        Graphic Designer
+                      <p className="!mb-0 mt-0 text-sm sm:text-base font-pj text-gray-600">
+                        Travel Enthusiast
                       </p>
                     </div>
                   </div>

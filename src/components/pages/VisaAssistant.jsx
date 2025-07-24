@@ -1,4 +1,7 @@
-import React from 'react'
+import React from 'react';
+import visaDocs from '../../assets/VISA Documentstions.jpg';
+import visaDocs1 from '../../assets/VISA DOCS1.jpg';
+import visaFast from '../../assets/VISA fast process.jpg';
 
 const VisaAssistant = () => {
     return (
@@ -19,32 +22,72 @@ const VisaAssistant = () => {
 
                 {/* Feature Cards */}
                 <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                    <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                        <svg className="w-12 h-12 text-[#046cb8] mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2m-4-8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2m-4-8h2a2 2 0 012 2v6a2 2 0 01-2 2H7a2 2 0 01-2-2v-6a2 2 0 012-2z"></path>
-                        </svg>
-                        <h3 className="text-xl font-semibold text-gray-900">Expert Consultation</h3>
-                        <p className="mt-3 text-gray-600 leading-relaxed">
-                            Receive tailored guidance from visa specialists to ensure your application is on the right track.
-                        </p>
+                    {/* Card 1 */}
+                    <div 
+                        className="relative group bg-white p-0 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden h-80"
+                        style={{
+                            backgroundImage: `url(${visaDocs})`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            backgroundRepeat: 'no-repeat'
+                        }}
+                    >
+                        {/* Overlay with animation */}
+                        <div className="absolute inset-0 flex flex-col justify-center opacity-0 translate-y-8 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 ease-out bg-white/60 backdrop-blur-md p-8">
+                            <div className="relative z-10">
+                                <svg className="w-12 h-12 text-[#046cb8] mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2m-4-8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2m-4-8h2a2 2 0 012 2v6a2 2 0 01-2 2H7a2 2 0 01-2-2v-6a2 2 0 012-2z"></path>
+                                </svg>
+                                <h3 className="text-xl font-semibold text-gray-900">Expert Consultation</h3>
+                                <p className="mt-3 text-gray-600 leading-relaxed">
+                                    Receive tailored guidance from visa specialists to ensure your application is on the right track.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                        <svg className="w-12 h-12 text-[#046cb8] mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                        </svg>
-                        <h3 className="text-xl font-semibold text-gray-900">Document Assistance</h3>
-                        <p className="mt-3 text-gray-600 leading-relaxed">
-                            We help you gather and organize all required documents for a stress-free application.
-                        </p>
+                    {/* Card 2 */}
+                    <div 
+                        className="relative group bg-white p-0 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden h-80"
+                        style={{
+                            backgroundImage: `url(${visaDocs1})`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            backgroundRepeat: 'no-repeat'
+                        }}
+                    >
+                        <div className="absolute inset-0 flex flex-col justify-center opacity-0 translate-y-8 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 ease-out bg-white/60 backdrop-blur-md p-8">
+                            <div className="relative z-10">
+                                <svg className="w-12 h-12 text-[#046cb8] mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                </svg>
+                                <h3 className="text-xl font-semibold text-gray-900">Document Assistance</h3>
+                                <p className="mt-3 text-gray-600 leading-relaxed">
+                                    We help you gather and organize all required documents for a stress-free application.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                        <svg className="w-12 h-12 text-[#046cb8] mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                        </svg>
-                        <h3 className="text-xl font-semibold text-gray-900">Fast Processing</h3>
-                        <p className="mt-3 text-gray-600 leading-relaxed">
-                            Our efficient process ensures your visa application is handled swiftly and accurately.
-                        </p>
+                    {/* Card 3 */}
+                    <div 
+                        className="relative group bg-white p-0 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden h-80"
+                        style={{
+                            backgroundImage: `url(${visaFast})`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            backgroundRepeat: 'no-repeat'
+                        }}
+                    >
+                        <div className="absolute inset-0 flex flex-col justify-center opacity-0 translate-y-8 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 ease-out bg-white/60 backdrop-blur-md p-8">
+                            <div className="relative z-10">
+                                <svg className="w-12 h-12 text-[#046cb8] mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                                <h3 className="text-xl font-semibold text-gray-900">Fast Processing</h3>
+                                <p className="mt-3 text-gray-600 leading-relaxed">
+                                    Our efficient process ensures your visa application is handled swiftly and accurately.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -59,7 +102,7 @@ const VisaAssistant = () => {
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default VisaAssistant
+export default VisaAssistant;

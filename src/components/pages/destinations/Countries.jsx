@@ -111,14 +111,30 @@ const Countries = () => {
                     transition: 'all 0.3s ease'
                 }}
                 onMouseEnter={(e) => {
-                    e.currentTarget.style.transform = 'scale(1.05)';
+                    e.currentTarget.style.transform = 'scale(1.02)';
                     const overlay = e.currentTarget.querySelector('.hover-overlay');
-                    if (overlay) overlay.style.opacity = '1';
+                    const text = e.currentTarget.querySelector('.hover-text');
+                    if (overlay) {
+                        overlay.style.opacity = '1';
+                        overlay.style.transform = 'translateY(0)';
+                    }
+                    if (text) {
+                        text.style.opacity = '1';
+                        text.style.transform = 'translateY(0)';
+                    }
                 }}
                 onMouseLeave={(e) => {
                     e.currentTarget.style.transform = 'scale(1)';
                     const overlay = e.currentTarget.querySelector('.hover-overlay');
-                    if (overlay) overlay.style.opacity = '0';
+                    const text = e.currentTarget.querySelector('.hover-text');
+                    if (overlay) {
+                        overlay.style.opacity = '0';
+                        overlay.style.transform = 'translateY(100%)';
+                    }
+                    if (text) {
+                        text.style.opacity = '0';
+                        text.style.transform = 'translateY(20px)';
+                    }
                 }}
             >
                 <div className="destination-cards-main" style={{ position: 'relative' }}>
@@ -146,25 +162,32 @@ const Countries = () => {
                         left: 0,
                         right: 0,
                         bottom: 0,
-                        backgroundColor: 'rgba(0, 0, 0, 0.7)',
+                        background: 'rgba(255, 255, 255, 0.6)',
+                        backdropFilter: 'blur(0px)',
+                        WebkitBackdropFilter: 'blur(8px)',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
                         opacity: 0,
-                        transition: 'opacity 0.3s ease',
+                        transform: 'translateY(100%)',
+                        transition: 'all 0.5s cubic-bezier(0.4, 0, 0.2, 1)',
                         borderRadius: '8px'
                     }}
                         className="hover-overlay"
                     >
-                        {/* <div style={{
-                            color: 'white',
+                        <div style={{
+                            color: '#046cb8',
                             textAlign: 'center',
-                            fontSize: '22px',
+                            fontSize: '28px',
                             fontWeight: '400',
-                            textShadow: '2px 2px 4px rgba(0,0,0,0.8)'
-                        }}>
-                            Click to view details
-                        </div> */}
+                            transform: 'translateY(20px)',
+                            transition: 'all 0.5s cubic-bezier(0.4, 0, 0.2, 1)',
+                            opacity: 0
+                        }}
+                            className="hover-text"
+                        >
+                            Click to view <br /> more details
+                        </div>
                     </div>
                 </div>
                 <div className="destination-cards-text">

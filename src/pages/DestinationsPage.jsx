@@ -9,7 +9,7 @@ import { useBooking } from '../context/BookingContext'
 import { useNavigate } from 'react-router-dom'
 
 const DestinationsPage = () => {
-    const { isBookingOpen, currentPackage, closeBooking, submitBooking } = useBooking()
+    const { isBookingOpen, currentPackage, closeBooking, submitBooking, bookingTitle, bookingButtonText } = useBooking()
     const navigate = useNavigate()
 
     const handleBookingSubmit = async (formData) => {
@@ -42,6 +42,8 @@ const DestinationsPage = () => {
                 onClose={closeBooking}
                 packageData={currentPackage}
                 onSubmit={handleBookingSubmit}
+                title={bookingTitle}
+                buttonText={bookingButtonText}
             />
         </>
     )

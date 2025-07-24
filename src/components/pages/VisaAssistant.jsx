@@ -2,8 +2,14 @@ import React from 'react';
 import visaDocs from '../../assets/VISA Documentstions.jpg';
 import visaDocs1 from '../../assets/VISA DOCS1.jpg';
 import visaFast from '../../assets/VISA fast process.jpg';
+import { useBooking } from '../../context/BookingContext';
 
 const VisaAssistant = () => {
+    const { openBooking } = useBooking()
+
+    const handleBookNow = () => {
+        openBooking(null, 'Book Your Visa Consultation', 'Book Now')
+    }
     return (
         <section className="relative pb-10 px-4 sm:px-6 lg:px-8 overflow-hidden">
             {/* Background decorative element */}
@@ -23,7 +29,7 @@ const VisaAssistant = () => {
                 {/* Feature Cards */}
                 <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                     {/* Card 1 */}
-                    <div 
+                    <div
                         className="relative group bg-white p-0 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden h-80"
                         style={{
                             backgroundImage: `url(${visaDocs})`,
@@ -46,7 +52,7 @@ const VisaAssistant = () => {
                         </div>
                     </div>
                     {/* Card 2 */}
-                    <div 
+                    <div
                         className="relative group bg-white p-0 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden h-80"
                         style={{
                             backgroundImage: `url(${visaDocs1})`,
@@ -68,7 +74,7 @@ const VisaAssistant = () => {
                         </div>
                     </div>
                     {/* Card 3 */}
-                    <div 
+                    <div
                         className="relative group bg-white p-0 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden h-80"
                         style={{
                             backgroundImage: `url(${visaFast})`,
@@ -93,12 +99,12 @@ const VisaAssistant = () => {
 
                 {/* Call to Action */}
                 <div className="mt-16 text-center">
-                    <a
-                        href="#contact"
-                        className="inline-block px-10 py-4 rounded-full text-lg font-medium border border-black hover:!text-black"
-                    >
+                    <button
+                        onClick={handleBookNow}
+                        className="button w-button"
+                        style={{ cursor: 'pointer' }}                          >
                         Start Your Visa Application Today
-                    </a>
+                    </button>
                 </div>
             </div>
         </section>

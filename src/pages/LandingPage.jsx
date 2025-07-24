@@ -16,7 +16,7 @@ import { useBooking } from '../context/BookingContext'
 import { motion } from 'framer-motion'
 
 const LandingPage = () => {
-  const { isBookingOpen, currentPackage, closeBooking, submitBooking } = useBooking()
+  const { isBookingOpen, currentPackage, closeBooking, submitBooking, bookingTitle, bookingButtonText } = useBooking()
   const navigate = useNavigate()
 
   // Animation variants - using transform to prevent layout shifts
@@ -186,6 +186,8 @@ const LandingPage = () => {
         onClose={closeBooking}
         packageData={currentPackage}
         onSubmit={handleBookingSubmit}
+        title={bookingTitle}
+        buttonText={bookingButtonText}
       />
     </>
   )

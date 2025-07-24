@@ -22,20 +22,26 @@ export const BookingProvider = ({ children }) => {
   const [isBookingOpen, setIsBookingOpen] = useState(false)
   const [currentPackage, setCurrentPackage] = useState(null)
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [bookingTitle, setBookingTitle] = useState("Book Your Dream Trip")
+  const [bookingButtonText, setBookingButtonText] = useState("Submit Booking Request")
 
   // Initialize EmailJS
   React.useEffect(() => {
     emailjs.init(EMAIL_CONFIG.publicKey)
   }, [])
 
-  const openBooking = (packageData) => {
+  const openBooking = (packageData, title = "Book Your Dream Trip", buttonText = "Submit Booking Request") => {
     setCurrentPackage(packageData)
+    setBookingTitle(title)
+    setBookingButtonText(buttonText)
     setIsBookingOpen(true)
   }
 
   const closeBooking = () => {
     setIsBookingOpen(false)
     setCurrentPackage(null)
+    setBookingTitle("Book Your Dream Trip")
+    setBookingButtonText("Submit Booking Request")
   }
 
   const sendBookingEmail = async (formData) => {
@@ -92,6 +98,8 @@ export const BookingProvider = ({ children }) => {
     isBookingOpen,
     currentPackage,
     isSubmitting,
+    bookingTitle,
+    bookingButtonText,
     openBooking,
     closeBooking,
     submitBooking,

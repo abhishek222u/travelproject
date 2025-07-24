@@ -1,7 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import { X, Phone, Mail, MessageCircle, MapPin, Package, User, Send } from 'lucide-react'
 
-const BookingPopup = ({ isOpen, onClose, packageData, onSubmit }) => {
+const BookingPopup = ({ 
+    isOpen, 
+    onClose, 
+    packageData, 
+    onSubmit,
+    title = "Book Your Dream Trip",
+    buttonText = "Submit Booking Request"
+}) => {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -91,7 +98,7 @@ const BookingPopup = ({ isOpen, onClose, packageData, onSubmit }) => {
                 <div className="booking-popup-header">
                     <div className="booking-popup-title">
                         <Package className="booking-icon" />
-                        <h2 style={{ color: 'white' }}>Book Your Dream Trip</h2>
+                        <h2 style={{ color: 'white' }}>{title}</h2>
                     </div>
                     <button onClick={onClose} className="booking-popup-close">
                         <X size={24} />
@@ -221,7 +228,7 @@ const BookingPopup = ({ isOpen, onClose, packageData, onSubmit }) => {
                             ) : (
                                 <>
                                     <Send size={18} />
-                                    Submit Booking Request
+                                    {buttonText}
                                 </>
                             )}
                         </button>

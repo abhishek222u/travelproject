@@ -12,7 +12,7 @@ import { useNavigate } from 'react-router-dom'
 
 const CountryPage = () => {
     const { countryName } = useParams();
-    const { openBooking, isBookingOpen, currentPackage, closeBooking, submitBooking } = useBooking()
+    const { openBooking, isBookingOpen, currentPackage, closeBooking, submitBooking, bookingTitle, bookingButtonText } = useBooking()
     const navigate = useNavigate()
 
     // Convert URL parameter to display name
@@ -1323,6 +1323,8 @@ const CountryPage = () => {
                 onClose={closeBooking}
                 packageData={currentPackage}
                 onSubmit={handleBookingSubmit}
+                title={bookingTitle}
+                buttonText={bookingButtonText}
             />
 
             <style jsx>{`

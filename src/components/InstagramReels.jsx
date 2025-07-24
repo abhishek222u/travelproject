@@ -38,7 +38,7 @@ const InstagramReels = () => {
     return (
         <div className="luxury-container">
             <div className="header-section">
-                <h2 className='!font-semibold !text-3xl flex justify-center items-center gap-1'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png?20200512141346' height={25} width={30}></img> discover something amazing from Our instagram travel adventures!</h2>
+                <h2 className='!font-semibold !text-3xl flex justify-center items-center gap-2'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png?20200512141346' height={25} width={30}></img> discover something amazing from Our instagram travel adventures!</h2>
                 <p className="subtitle">check out our latest travel adventures and destination highlights</p>
             </div>
 

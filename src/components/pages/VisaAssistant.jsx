@@ -13,17 +13,17 @@ const VisaAssistant = () => {
                 {/* Header Section */}
                 <div className="text-center">
                     <h2 className="text-4xl font-bold text-gray-900 sm:text-5xl tracking-tight">
-                        Simplify Your <span className="text-[#046cb8]">Visa Journey</span>
+                        simplify your <span className="text-[#046cb8]">visa journey</span>
                     </h2>
                     <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                        Navigate the visa process with ease. Our expert team provides personalized support, from application to approval, ensuring a seamless experience.
+                        navigate the visa process with ease. our expert team provides personalized support, from application to approval, ensuring a seamless experience.
                     </p>
                 </div>
 
                 {/* Feature Cards */}
                 <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                     {/* Card 1 */}
-                    <div 
+                    <div
                         className="relative group bg-white p-0 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden h-80"
                         style={{
                             backgroundImage: `url(${visaDocs})`,
@@ -46,7 +46,7 @@ const VisaAssistant = () => {
                         </div>
                     </div>
                     {/* Card 2 */}
-                    <div 
+                    <div
                         className="relative group bg-white p-0 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden h-80"
                         style={{
                             backgroundImage: `url(${visaDocs1})`,
@@ -68,7 +68,7 @@ const VisaAssistant = () => {
                         </div>
                     </div>
                     {/* Card 3 */}
-                    <div 
+                    <div
                         className="relative group bg-white p-0 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden h-80"
                         style={{
                             backgroundImage: `url(${visaFast})`,

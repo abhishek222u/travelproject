@@ -7,8 +7,8 @@ const Banner = () => {
     const handleBookNow = () => {
         const item = {
             id: 'switzerland-tour',
-            name: 'Switzerland Tour - 5 Night 6 Days',
-            duration: '5 Night 6 Days',
+            name: 'Switzerland Tour - 5 night 6 days',
+            duration: '5 night 6 days',
             price: '$890.00',
             visaRequirement: 'Visa Required',
             image: 'https://cdn.prod.website-files.com/672d8f75dabc438e6086ed62/677b7d8f3fc26d93686b2d21_Switzerland%20one.webp'
@@ -29,7 +29,7 @@ const Banner = () => {
             <div className="w-layout-blockcontainer container w-container">
                 <div className="w-layout-vflex tour-slider-cards switzerland">
                     <div className="w-layout-vflex tour-slider-cards-main-two">
-                        <div className="offer-tag tour-slider-offer">5 Night 6 Days</div>
+                        <div className="offer-tag tour-slider-offer">5 night 6 days</div>
                         <div className="big-text popular-card-text slider-card-text">
                             Switzerland
                         </div>

@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import honeyH from '../assets/ManaliH.jpg'
+import spitiV from '../assets/spitivillage.jpg'
 
 // Complete categorized destination data structure with all packages and images
 const destinationsData = {
@@ -9,8 +11,8 @@ const destinationsData = {
             {
                 id: 1,
                 href: '/product/chardham-yatra-group',
-                image: 'https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=820&h=1030&fit=crop',
-                srcSet: 'https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=820&h=1030&fit=crop 820w',
+                image: 'https://uttarakhandtourism.gov.in/assets/media/UTDB_media_1740661833CHAR-DHAM.jpg',
+                srcSet: 'https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=500&h=630&fit=crop 500w, https://uttarakhandtourism.gov.in/assets/media/UTDB_media_1740661833CHAR-DHAM.jpg 820w',
                 title: 'Chardham Yatra',
                 price: '₹32,000',
                 originalPrice: '₹38,000',
@@ -22,8 +24,8 @@ const destinationsData = {
             {
                 id: 2,
                 href: '/product/spiti-valley-group-tour',
-                image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=820&h=1030&fit=crop',
-                srcSet: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=820&h=1030&fit=crop 820w',
+                image: spitiV,
+                srcSet: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=500&h=630&fit=crop 500w,' + spitiV,
                 title: 'Spiti Valley Tour',
                 price: '₹25,000',
                 originalPrice: '₹30,000',
@@ -35,8 +37,8 @@ const destinationsData = {
             {
                 id: 3,
                 href: '/product/ladakh-bike-group-tour',
-                image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=820&h=1030&fit=crop',
-                srcSet: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=820&h=1030&fit=crop 820w',
+                image: 'https://gulliveradventures.com/wp-content/uploads/2022/06/motorcycle-trip-to-ladakh.jpg',
+                srcSet: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=630&fit=crop 500w, https://gulliveradventures.com/wp-content/uploads/2022/06/motorcycle-trip-to-ladakh.jpg ',
                 title: 'Ladakh Bike Tour',
                 price: '₹30,000',
                 originalPrice: '₹35,000',
@@ -48,8 +50,8 @@ const destinationsData = {
             {
                 id: 98,
                 href: '/product/rajasthan-customized',
-                image: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=820&h=1030&fit=crop',
-                srcSet: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=820&h=1030&fit=crop 820w',
+                image: 'https://images.unsplash.com/photo-1616693139578-f1c17deb0d4f?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                srcSet: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1616693139578-f1c17deb0d4f?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 820w',
                 title: 'Rajasthan Tour',
                 price: '₹22,000',
                 originalPrice: '₹26,000',
@@ -172,8 +174,8 @@ const destinationsData = {
             {
                 id: 12,
                 href: '/product/rajasthan-customized',
-                image: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=820&h=1030&fit=crop',
-                srcSet: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=820&h=1030&fit=crop 820w',
+                image: 'https://images.unsplash.com/photo-1616693139578-f1c17deb0d4f?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                srcSet: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1616693139578-f1c17deb0d4f?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
                 title: 'Rajasthan Tour',
                 price: '₹22,000',
                 originalPrice: '₹26,000',
@@ -198,8 +200,8 @@ const destinationsData = {
             {
                 id: 14,
                 href: '/product/chardham-customized',
-                image: 'https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=820&h=1030&fit=crop',
-                srcSet: 'https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=820&h=1030&fit=crop 820w',
+                image: 'https://uttarakhandtourism.gov.in/assets/media/UTDB_media_1740661833CHAR-DHAM.jpg',
+                srcSet: 'https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=500&h=630&fit=crop 500w, https://uttarakhandtourism.gov.in/assets/media/UTDB_media_1740661833CHAR-DHAM.jpg ',
                 title: 'Chardham Yatra',
                 price: '₹35,000',
                 originalPrice: '₹41,000',
@@ -211,8 +213,8 @@ const destinationsData = {
             {
                 id: 15,
                 href: '/product/spiti-customized',
-                image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=820&h=1030&fit=crop',
-                srcSet: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=820&h=1030&fit=crop 820w',
+                image: 'https://www.shutterstock.com/shutterstock/photos/1747947332/display_1500/stock-photo-a-vertical-shot-of-spiti-valley-in-winter-with-frozen-river-and-snow-peak-mountains-1747947332.jpg',
+                srcSet: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=500&h=630&fit=crop 500w, https://www.shutterstock.com/shutterstock/photos/1747947332/display_1500/stock-photo-a-vertical-shot-of-spiti-valley-in-winter-with-frozen-river-and-snow-peak-mountains-1747947332.jpg ',
                 title: 'Spiti Valley Tour',
                 price: '₹28,000',
                 originalPrice: '₹33,000',
@@ -343,8 +345,8 @@ const destinationsData = {
             {
                 id: 25,
                 href: '/product/maldives-customized',
-                image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=820&h=1030&fit=crop',
-                srcSet: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=820&h=1030&fit=crop 820w',
+                image: 'https://img.freepik.com/premium-photo/beautiful-drone-aerial-resort-maldives-islands-exotic-travel-destination-ocean-lagoon-palm-trees_663265-2103.jpg',
+                srcSet: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=630&fit=crop 500w, https://img.freepik.com/premium-photo/beautiful-drone-aerial-resort-maldives-islands-exotic-travel-destination-ocean-lagoon-palm-trees_663265-2103.jpg ',
                 title: 'Maldives Tour',
                 price: '$700',
                 originalPrice: '$820',
@@ -582,9 +584,9 @@ const destinationsData = {
             {
                 id: 43,
                 href: '/product/manali-honeymoon',
-                image: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=820&h=1030&fit=crop',
-                srcSet: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=820&h=1030&fit=crop 820w',
-                title: 'Manali Honeymoon',
+                image: honeyH,
+                srcSet: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=500&h=630&fit=crop 500w,' + honeyH,
+                title: 'Manali',
                 price: '₹18,000',
                 originalPrice: '₹21,000',
                 rating: '4.9 (298)',
@@ -595,9 +597,9 @@ const destinationsData = {
             {
                 id: 44,
                 href: '/product/kashmir-honeymoon',
-                image: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=820&h=1030&fit=crop',
-                srcSet: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=820&h=1030&fit=crop 820w',
-                title: 'Kashmir Honeymoon',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/6/66/Square_Panorama_of_Aru_Valley%2C_Jammu_and_Kashmir%2C_India.jpg',
+                srcSet: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=500&h=630&fit=crop 500w, https://upload.wikimedia.org/wikipedia/commons/6/66/Square_Panorama_of_Aru_Valley%2C_Jammu_and_Kashmir%2C_India.jpg ',
+                title: 'Kashmir',
                 price: '₹23,000',
                 originalPrice: '₹27,000',
                 rating: '4.8 (234)',
@@ -608,9 +610,9 @@ const destinationsData = {
             {
                 id: 45,
                 href: '/product/gulmarg-honeymoon',
-                image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=820&h=1030&fit=crop',
-                srcSet: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=820&h=1030&fit=crop 820w',
-                title: 'Gulmarg Honeymoon',
+                image: 'https://thumbs.dreamstime.com/b/winter-season-gulmarg-town-hill-station-popular-tourist-skiing-destination-kashmir-india-220931261.jpg',
+                srcSet: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=630&fit=crop 500w, https://thumbs.dreamstime.com/b/winter-season-gulmarg-town-hill-station-popular-tourist-skiing-destination-kashmir-india-220931261.jpg',
+                title: 'Gulmarg',
                 price: '₹22,000',
                 originalPrice: '₹26,000',
                 rating: '4.7 (176)',
@@ -621,9 +623,9 @@ const destinationsData = {
             {
                 id: 46,
                 href: '/product/mount-abu-honeymoon',
-                image: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=820&h=1030&fit=crop',
-                srcSet: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=820&h=1030&fit=crop 820w',
-                title: 'Mount Abu Honeymoon',
+                image: 'https://thumbs.dreamstime.com/b/toad-rock-mount-abu-india-hill-station-rajasthan-state-172680205.jpg',
+                srcSet: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=500&h=630&fit=crop 500w, https://thumbs.dreamstime.com/b/toad-rock-mount-abu-india-hill-station-rajasthan-state-172680205.jpg 820w',
+                title: 'Mount Abu',
                 price: '₹16,000',
                 originalPrice: '₹19,000',
                 rating: '4.6 (145)',
@@ -636,7 +638,7 @@ const destinationsData = {
                 href: '/product/mussoorie-honeymoon',
                 image: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=820&h=1030&fit=crop',
                 srcSet: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=820&h=1030&fit=crop 820w',
-                title: 'Mussoorie Honeymoon',
+                title: 'Mussoorie',
                 price: '₹15,000',
                 originalPrice: '₹18,000',
                 rating: '4.7 (167)',
@@ -649,7 +651,7 @@ const destinationsData = {
                 href: '/product/shimla-honeymoon',
                 image: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=820&h=1030&fit=crop',
                 srcSet: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=820&h=1030&fit=crop 820w',
-                title: 'Shimla Honeymoon',
+                title: 'Shimla',
                 price: '₹14,000',
                 originalPrice: '₹16,500',
                 rating: '4.6 (189)',
@@ -664,7 +666,7 @@ const destinationsData = {
                 href: '/product/bali-honeymoon',
                 image: 'https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?w=820&h=1030&fit=crop',
                 srcSet: 'https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?w=820&h=1030&fit=crop 820w',
-                title: 'Bali Honeymoon',
+                title: 'Bali ',
                 price: '$500',
                 originalPrice: '$590',
                 rating: '4.9 (345)',
@@ -675,9 +677,9 @@ const destinationsData = {
             {
                 id: 50,
                 href: '/product/maldives-honeymoon',
-                image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=820&h=1030&fit=crop',
-                srcSet: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=820&h=1030&fit=crop 820w',
-                title: 'Maldives Honeymoon',
+                image: 'https://img.freepik.com/premium-photo/beautiful-drone-aerial-resort-maldives-islands-exotic-travel-destination-ocean-lagoon-palm-trees_663265-2103.jpg',
+                srcSet: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=630&fit=crop 500w, https://img.freepik.com/premium-photo/beautiful-drone-aerial-resort-maldives-islands-exotic-travel-destination-ocean-lagoon-palm-trees_663265-2103.jpg 820w',
+                title: 'Maldives',
                 price: '$750',
                 originalPrice: '$880',
                 rating: '4.9 (287)',
@@ -688,9 +690,9 @@ const destinationsData = {
             {
                 id: 51,
                 href: '/product/switzerland-honeymoon',
-                image: 'https://images.unsplash.com/photo-1520986606214-8b456906c813?w=820&h=1030&fit=crop',
-                srcSet: 'https://images.unsplash.com/photo-1520986606214-8b456906c813?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1520986606214-8b456906c813?w=820&h=1030&fit=crop 820w',
-                title: 'Switzerland Honeymoon',
+                image: 'https://images.pexels.com/photos/28677183/pexels-photo-28677183.jpeg?cs=srgb&dl=pexels-gsn-travel-28677183.jpg&fm=jpg',
+                srcSet: 'https://images.unsplash.com/photo-1520986606214-8b456906c813?w=500&h=630&fit=crop 500w, https://images.pexels.com/photos/28677183/pexels-photo-28677183.jpeg?cs=srgb&dl=pexels-gsn-travel-28677183.jpg&fm=jpg 820w',
+                title: 'Switzerland',
                 price: '$1,600',
                 originalPrice: '$1,900',
                 rating: '4.8 (198)',
@@ -703,7 +705,7 @@ const destinationsData = {
                 href: '/product/thailand-honeymoon',
                 image: 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=820&h=1030&fit=crop',
                 srcSet: 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=820&h=1030&fit=crop 820w',
-                title: 'Thailand Honeymoon',
+                title: 'Thailand',
                 price: '$450',
                 originalPrice: '$530',
                 rating: '4.8 (234)',
@@ -719,8 +721,8 @@ const destinationsData = {
             {
                 id: 53,
                 href: '/product/rishikesh-rafting',
-                image: 'https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?w=820&h=1030&fit=crop',
-                srcSet: 'https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?w=820&h=1030&fit=crop 820w',
+                image: 'https://media1.thrillophilia.com/filestore/l1stgsdtm1wlcgkfhkg49pers7qj_WDEFRGTYH.png',
+                srcSet: 'https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?w=500&h=630&fit=crop 500w, https://media1.thrillophilia.com/filestore/l1stgsdtm1wlcgkfhkg49pers7qj_WDEFRGTYH.png 820w',
                 title: 'Rishikesh Rafting & Camping',
                 price: '₹6,000',
                 originalPrice: '₹7,000',
@@ -732,9 +734,9 @@ const destinationsData = {
             {
                 id: 54,
                 href: '/product/manali-srinagar-bike',
-                image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=820&h=1030&fit=crop',
-                srcSet: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=820&h=1030&fit=crop 820w',
-                title: 'Manali to Srinagar Bike Expedition',
+                image: 'https://www.ladakhtravelco.com/uploads/7/3/4/1/73415203/2138742_orig.jpg',
+                srcSet: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=630&fit=crop 500w, https://www.ladakhtravelco.com/uploads/7/3/4/1/73415203/2138742_orig.jpg 820w',
+                title: 'Manali to Srinagar Bike',
                 price: '₹30,999',
                 originalPrice: '₹36,000',
                 rating: '4.9 (189)',
@@ -745,8 +747,8 @@ const destinationsData = {
             {
                 id: 55,
                 href: '/product/spiti-winter-trek',
-                image: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=820&h=1030&fit=crop',
-                srcSet: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=820&h=1030&fit=crop 820w',
+                image: 'https://raachotrekkers.com//wp-content/uploads/2020/04/Shichling-village.jpeg',
+                srcSet: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=500&h=630&fit=crop 500w, https://raachotrekkers.com//wp-content/uploads/2020/04/Shichling-village.jpeg 820w',
                 title: 'Winter Spiti Backpacking',
                 price: '₹17,999',
                 originalPrice: '₹21,000',
@@ -758,8 +760,8 @@ const destinationsData = {
             {
                 id: 56,
                 href: '/product/triund-paragliding',
-                image: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=820&h=1030&fit=crop',
-                srcSet: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=820&h=1030&fit=crop 820w',
+                image: 'https://www.trekkersofindia.com/blog/1814526569100426.webp',
+                srcSet: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=500&h=630&fit=crop 500w, https://www.trekkersofindia.com/blog/1814526569100426.webp 820w',
                 title: 'Triund Trek with Bir Paragliding',
                 price: '₹5,000',
                 originalPrice: '₹6,000',
@@ -1019,8 +1021,8 @@ const destinationsData = {
             {
                 id: 75,
                 href: '/product/amritsar-golden-temple',
-                image: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=820&h=1030&fit=crop',
-                srcSet: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=500&h=630&fit=crop 500w, https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=820&h=1030&fit=crop 820w',
+                image: 'https://img.freepik.com/premium-photo/golden-temple-amritsar_163782-3654.jpg',
+                srcSet: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=500&h=630&fit=crop 500w, https://img.freepik.com/premium-photo/golden-temple-amritsar_163782-3654.jpg 820w',
                 title: 'Amritsar Golden Temple',
                 price: '₹12,000',
                 originalPrice: '₹14,000',
@@ -1222,7 +1224,7 @@ const subTabs = [
 
 // DestinationCard Component (keeping the same design)
 const DestinationCard = ({ destination, category }) => {
-    const {image, srcSet, title, price, originalPrice, rating, duration, featured, discount } = destination
+    const { image, srcSet, title, price, originalPrice, rating, duration, featured, discount } = destination
 
     // Extract country name from title for routing
     const getCountryFromTitle = (title) => {
@@ -1343,50 +1345,54 @@ const DestinationCard = ({ destination, category }) => {
     return (
         <div className="destination-slide-item">
             <Link to={detailPageUrl} className="destination-cards-two w-inline-block">
-                                                <div className="destination-cards-two-image">
-                                                    <img
-                                                        width="299.5"
-                                                        height={387}
-                                                        alt=""
-                                                        loading="lazy"
+                <div className="destination-cards-two-image">
+                    <img
+                        width={300}
+                        // height={387}
+                        alt=""
+                        loading="lazy"
                         src={image}
-                                                        sizes="100vw"
+                        sizes="100vw"
                         srcSet={srcSet}
-                                                        className="tab-image-full-width"
-                                                    />
-                                                    <div className="destination-cards-two-overlay" />
-                                                </div>
-                                                <div className="destination-cards-two-text">
-                                                    <div className="destination-card-two-name">
+                        className="tab-image-full-width"
+                        style={{
+                            width: '300px',
+                            height: '387px'
+                        }}
+                    />
+                    <div className="destination-cards-two-overlay" />
+                </div>
+                <div className="destination-cards-two-text">
+                    <div className="destination-card-two-name">
                         <div className="text-color-white small-text">{category}</div>
                         <div className="heading-style-h6 text-color-white">{title}</div>
-                                                        <div className="w-layout-hflex card-price">
-                                                            <div className="text-light-white">From </div>
+                        <div className="w-layout-hflex card-price">
+                            <div className="text-light-white">From </div>
                             <div className="card-one-sell-price">&nbsp;{price}&nbsp;</div>
                             <div className="text-strike-through text-light-white">&nbsp;{originalPrice}&nbsp;</div>
-                                                        </div>
-                                                    </div>
-                                                    <div className="w-layout-hflex cards-ratings">
-                                                        <div className="w-layout-hflex trip-ratings">
-                                                            <img
-                                                                width={16}
-                                                                loading="lazy"
-                                                                alt="Icon"
-                                                                src="https://cdn.prod.website-files.com/66920f2a1e03460f2a6e88a5/671b618e1c1b5cffd4b5015d_Rating%20Star.svg"
-                                                            />
+                        </div>
+                    </div>
+                    <div className="w-layout-hflex cards-ratings">
+                        <div className="w-layout-hflex trip-ratings">
+                            <img
+                                width={16}
+                                loading="lazy"
+                                alt="Icon"
+                                src="https://cdn.prod.website-files.com/66920f2a1e03460f2a6e88a5/671b618e1c1b5cffd4b5015d_Rating%20Star.svg"
+                            />
                             <div className="text-color-white small-text">{rating}</div>
-                                                            </div>
+                        </div>
                         <div className="text-color-white small-text">{duration}</div>
-                                                    </div>
-                                                </div>
-                                                <div className="w-layout-vflex offer-box">
+                    </div>
+                </div>
+                <div className="w-layout-vflex offer-box">
                     <div className={`offer-text featured ${!featured ? 'w-dyn-bind-empty' : ''}`}>
                         {featured}
-                                                </div>
+                    </div>
                     <div className="offer-text off">{discount}</div>
-                                                </div>
-                                            </Link>
-                                        </div>
+                </div>
+            </Link>
+        </div>
     )
 }
 
@@ -1496,7 +1502,7 @@ const Destinations = () => {
                                 transformStyle: "preserve-3d"
                             }}
                         >
-                            Find your perfect travel package
+                            find your perfect travel package
                         </h2>
                         <div
                             data-w-id="ff0385ae-cfbf-ca85-8978-184c11f0b12a"
@@ -1532,7 +1538,7 @@ const Destinations = () => {
                                         <div>{tab.label}</div>
                                     </a>
                                 ))}
-                                        </div>
+                            </div>
 
                             {/* Sub Category Tabs */}
                             <div className="tab-menu w-tab-menu" role="tablist" style={{ marginTop: '20px', paddingTop: '15px' }}>
@@ -1552,7 +1558,7 @@ const Destinations = () => {
                                         <div>{subTab.label}</div>
                                     </a>
                                 ))}
-                                        </div>
+                            </div>
 
                             {/* Tab Content with Slider */}
                             <div className="home-two-trip-content w-tab-content">
@@ -1569,22 +1575,22 @@ const Destinations = () => {
                                         />
                                     ))
                                 ))}
+                            </div>
                         </div>
-                    </div>
-                    <Link
-                        to="/destinations"
-                        className="button w-button"
-                        style={{
-                            opacity: 1,
+                        <Link
+                            to="/destinations"
+                            className="button w-button"
+                            style={{
+                                opacity: 1,
                                 transform: "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                            transformStyle: "preserve-3d"
-                        }}
-                    >
+                                transformStyle: "preserve-3d"
+                            }}
+                        >
                             View all packages
-                    </Link>
+                        </Link>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
         </>
     )
 }

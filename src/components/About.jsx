@@ -28,7 +28,7 @@ const About = () => {
                             delay={0}
                         >
                             <h2 className="no-margin">
-                                We recommended beautiful destinations every day
+                                we recommended beautiful destinations every day
                             </h2>
                         </AnimatedElement>
                         
@@ -47,7 +47,7 @@ const About = () => {
                                     srcSet="https://cdn.prod.website-files.com/66920f2a1e03460f2a6e88a5/675fbaa67d8c306b6644022f_Authors%2520faces-p-500.webp 500w, https://cdn.prod.website-files.com/66920f2a1e03460f2a6e88a5/675fbaa67d8c306b6644022f_Authors%20faces.webp 504w"
                                 />
                                 <div className="text-dark text-underline">
-                                    <span className="text-orange">30k+</span> Happy and satisfied
+                                    <span className="text-orange">30k+</span> happy and satisfied
                                     customers
                                 </div>
                             </div>
@@ -97,7 +97,7 @@ const About = () => {
                             delay={800}
                         >
                             <p>
-                                With over two decades of experience in crafting exceptional travel experiences,
+                                with over two decades of experience in crafting exceptional travel experiences,
                                 we've helped thousands of travelers discover the world's most amazing destinations.
                                 Our passionate team of travel experts ensures every journey is perfectly tailored
                                 to create lasting memories and authentic cultural connections.

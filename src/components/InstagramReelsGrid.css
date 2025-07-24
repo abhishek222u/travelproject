@@ -1,10 +1,10 @@
 .luxury-container {
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  padding: 60px 20px;
+  /* background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); */
+  padding: 20px 20px;
   font-family: "Inter", "Segoe UI", sans-serif;
   max-width: 1400px;
   margin: 0 auto;
-  min-height: 100vh;
+  min-height: 82vh;
 }
 
 .header-section {

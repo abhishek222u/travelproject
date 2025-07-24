@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import './HeroSection.css'
-import web1 from '../assets/web1.jpg'
-import web2 from '../assets/web2.jpg'
-import web3 from '../assets/web3.jpg'
+import web1 from '../assets/cave3.jpg'
+import web2 from '../assets/wildlife.jpg'
+import web3 from '../assets/volcano.jpg'
 import web4 from '../assets/web4.jpg'
 import web5 from '../assets/web5.jpg'
 
@@ -18,7 +18,7 @@ const HeroSection = () => {
     },
     {
       image: web2,
-      title: "Wilderness",
+      title: "Wild Life",
       subtitle: "Journey through nature",
       description: "Immerse yourself in pristine wilderness where wildlife roams free and untouched landscapes await your discovery."
     },
@@ -66,12 +66,12 @@ const HeroSection = () => {
               <div className="hero-big-text text-color-white">
                 {slide.title}
               </div>
-              <h1 className="text-color-white">
+              {/* <h1 className="text-color-white">
                 {slide.subtitle}
-              </h1>
-              <p className="hero-description">
+              </h1> */}
+              {/* <p className="hero-description">
                 {slide.description}
-              </p>
+              </p> */}
             </div>
           </div>
         ))}

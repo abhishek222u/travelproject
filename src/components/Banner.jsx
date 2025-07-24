@@ -34,7 +34,7 @@ const Banner = () => {
                             Switzerland
                         </div>
                         <div className="popular-card-border slider-card-boder" />
-                        <div className="heading-style-h5">Explore your journey</div>
+                        <div className="heading-style-h5">explore your journey</div>
                         <div className="w-layout-hflex slider-card-button-box">
                             <div className="w-layout-vflex card-three-text-box">
                                 <div className="w-layout-hflex card-three-price">

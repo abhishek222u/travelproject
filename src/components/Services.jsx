@@ -50,7 +50,7 @@ const Services = () => {
                                 alt="Icons"
                             />
                             <div className="w-layout-vflex service-cards-text">
-                                <div className="heading-style-h5 text-dark">Trusted advisor</div>
+                                <div className="heading-style-h5 text-dark">trusted advisor</div>
                                 <p className="no-margin">
                                     Expert guidance from certified travel professionals with years of 
                                     experience crafting perfect itineraries.

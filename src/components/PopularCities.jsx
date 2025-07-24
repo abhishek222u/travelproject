@@ -43,7 +43,7 @@ const PopularCities = () => {
                                 transformStyle: "preserve-3d"
                             }}
                         >
-                            Most popular tours
+                            most popular tours
                         </h2>
                         <p
                             data-w-id="ff0385ae-cfbf-ca85-8978-184c11f0b506"
@@ -55,8 +55,7 @@ const PopularCities = () => {
                                 transformStyle: "preserve-3d"
                             }}
                         >
-                            Lorem ipsum dolor sit amet consectetur. Ac lobortis tempus tincidunt
-                            suscipit volutpat nunc condimentum imperdiet tincidunt.
+                            🌍 Discover Our Most Loved Destinations Around the World!
                         </p>
                     </div>
                     <div
@@ -70,7 +69,7 @@ const PopularCities = () => {
                         }}
                     >
                         <div className="best-plan-left">
-                            <div className="heading-style-h5 text-dark">Recommended for you</div>
+                            <div className="heading-style-h5 text-dark">recommended for you</div>
                             <div className="w-dyn-list">
                                 <div role="list" className="recommended-list w-dyn-items">
                                     <div role="listitem" className="w-dyn-item">
@@ -119,7 +118,7 @@ const PopularCities = () => {
                                             className="recommended-cards w-inline-block"
                                         >
                                             <div className="recommended-images">
-                                                <img            
+                                                <img
                                                     className="border-radius-ten"
                                                     src="https://cdn.prod.website-files.com/672d8f75dabc438e6086ed62/677b7d8f3fc26d93686b2d21_Switzerland%20one.webp"
                                                     width={90}
@@ -133,7 +132,7 @@ const PopularCities = () => {
                                             </div>
                                             <div className="w-layout-vflex">
                                                 <div className="heading-style-h6">
-                                                    Explore Switzerland's scenic mountain escapes
+                                                    explore switzerland's scenic mountain escapes
                                                 </div>
                                                 <div className="w-layout-hflex card-price">
                                                     <div>From </div>
@@ -383,7 +382,7 @@ const PopularCities = () => {
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </section>

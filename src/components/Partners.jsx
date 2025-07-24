@@ -68,7 +68,7 @@ const Partners = () => {
                 </div>
               </div>
               <div className="marquee-text">
-                Trusted by 15,000+ founders &amp; business owners
+                trusted by 15,000+ founders &amp; business owners
               </div>
             </div>
           </div>

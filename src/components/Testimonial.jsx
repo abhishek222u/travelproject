@@ -20,7 +20,7 @@ const TestimonialSlider = () => {
               title=""
               className="pb-2 !text-base !font-medium leading-7 !text-black transition-all duration-200 border-b-2 border-gray-900 hover:border-gray-600 font-pj focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 hover:text-gray-600"
             >
-              Check all 2,157 reviews
+              check all 2,157 reviews
             </a>
           </div>
 

@@ -29,7 +29,7 @@ const Services = () => {
                             }}
                         >
                             discover the world with confidence through our expert travel services. 
-                            We combine personalized attention with exceptional value to create 
+                            we combine personalized attention with exceptional value to create 
                             unforgettable journeys tailored to your dreams and preferences.
                         </p>
                     </div>

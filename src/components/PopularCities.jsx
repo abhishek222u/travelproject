@@ -172,7 +172,7 @@ const PopularCities = () => {
                                             </div>
                                             <div className="w-layout-vflex">
                                                 <div className="heading-style-h6">
-                                                    Explore Colombia's stunning Caribbean beaches
+                                                    explore colombia's stunning caribbean beaches
                                                 </div>
                                                 <div className="w-layout-hflex card-price">
                                                     <div>From </div>
@@ -224,9 +224,9 @@ const PopularCities = () => {
                             </div>
                             <div className="w-layout-vflex special-cards-content">
                                 <div className="w-layout-vflex special-cards-headings">
-                                    <div className="small-text-two">5 Night 6 Days</div>
+                                    <div className="small-text-two">5 night 6 days</div>
                                     <div className="heading-style-h2 text-color-white">
-                                        Bangkok Pattaya
+                                        bangkok pattaya
                                     </div>
                                     <div className="spacial-card-location">THAILAND</div>
                                 </div>
@@ -237,12 +237,12 @@ const PopularCities = () => {
                                         </div>
                                         <div className="heading-style-h4 text-color-white">$214.00</div>
                                     </div>
-                                    <div className="offer-small-text">Offer price per person</div>
+                                    <div className="offer-small-text">offer price per person</div>
                                 </div>
                                 <div className="w-layout-vflex spacial-cards-bottom">
                                     <p className="small-text text-color-white spacial-cards-details">
-                                        2 night Bangkok | 3 night Pattaya | 4 star hotel | Daily
-                                        breakfast | Private Tours and transfers
+                                        2 night bangkok | 3 night pattaya | 4 star hotel | daily
+                                        breakfast | private tours and transfers
                                     </p>
                                     <button
                                         onClick={() => handleBookNow('bangkok')}
@@ -255,7 +255,7 @@ const PopularCities = () => {
                             </div>
                         </div>
                         <div className="best-plan-left">
-                            <div className="heading-style-h5 text-dark">Family trip</div>
+                            <div className="heading-style-h5 text-dark">family trip</div>
                             <div className="w-dyn-list">
                                 <div role="list" className="recommended-list w-dyn-items">
                                     <div role="listitem" className="w-dyn-item">
@@ -278,7 +278,7 @@ const PopularCities = () => {
                                             </div>
                                             <div className="w-layout-vflex">
                                                 <div className="heading-style-h6">
-                                                    Explore France's timeless scenic routes
+                                                    explore france's timeless scenic routes
                                                 </div>
                                                 <div className="w-layout-hflex card-price">
                                                     <div>From </div>
@@ -318,7 +318,7 @@ const PopularCities = () => {
                                             </div>
                                             <div className="w-layout-vflex">
                                                 <div className="heading-style-h6">
-                                                    Journey across India's cultural diversity
+                                                    journey across India's cultural diversity
                                                 </div>
                                                 <div className="w-layout-hflex card-price">
                                                     <div>From </div>
@@ -358,7 +358,7 @@ const PopularCities = () => {
                                             </div>
                                             <div className="w-layout-vflex">
                                                 <div className="heading-style-h6">
-                                                    Sri Lanka's wildlife and adventure
+                                                    sri lanka's wildlife and adventure
                                                 </div>
                                                 <div className="w-layout-hflex card-price">
                                                     <div>From </div>

@@ -7,10 +7,10 @@ const TestimonialSlider = () => {
         <div className="flex flex-col items-center">
           <div className="text-center">
             <p className="text-lg sm:text-xl lg:text-xl font-medium text-gray-600 font-pj">
-              2,157 people have said how good Rareblocks
+              2,157 people have said how good rareblocks
             </p>
             <h2 className="mt-4 !text-4xl lg:!text-5xl font-medium text-gray-900 font-pj">
-              Our happy clients say about us
+              our happy clients say about us
             </h2>
           </div>
 

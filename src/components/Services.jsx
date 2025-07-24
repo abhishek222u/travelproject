@@ -16,7 +16,7 @@ const Services = () => {
                                 transformStyle: "preserve-3d"
                             }}
                         >
-                            Why choose us?
+                            why choose us?
                         </h2>
                         <p
                             data-w-id="c8d60d4a-9d05-a354-fba4-8dcc20739b9b"
@@ -28,7 +28,7 @@ const Services = () => {
                                 transformStyle: "preserve-3d"
                             }}
                         >
-                            Discover the world with confidence through our expert travel services. 
+                            discover the world with confidence through our expert travel services. 
                             We combine personalized attention with exceptional value to create 
                             unforgettable journeys tailored to your dreams and preferences.
                         </p>
@@ -52,7 +52,7 @@ const Services = () => {
                             <div className="w-layout-vflex service-cards-text">
                                 <div className="heading-style-h5 text-dark">trusted advisor</div>
                                 <p className="no-margin">
-                                    Expert guidance from certified travel professionals with years of 
+                                    expert guidance from certified travel professionals with years of 
                                     experience crafting perfect itineraries.
                                 </p>
                             </div>
@@ -64,9 +64,9 @@ const Services = () => {
                                 alt="Icons"
                             />
                             <div className="w-layout-vflex service-cards-text">
-                                <div className="heading-style-h5 text-dark">Curated tours</div>
+                                <div className="heading-style-h5 text-dark">curated tours</div>
                                 <p className="no-margin">
-                                    Handpicked destinations and experiences designed to showcase the 
+                                    handpicked destinations and experiences designed to showcase the 
                                     best each location has to offer.
                                 </p>
                             </div>
@@ -79,10 +79,10 @@ const Services = () => {
                             />
                             <div className="w-layout-vflex service-cards-text">
                                 <div className="heading-style-h5 text-dark">
-                                    Complimentary upgrades
+                                    complimentary upgrades
                                 </div>
                                 <p className="no-margin">
-                                    Enjoy exclusive perks and room upgrades at partner hotels to 
+                                    enjoy exclusive perks and room upgrades at partner hotels to 
                                     enhance your travel experience.
                                 </p>
                             </div>
@@ -95,10 +95,10 @@ const Services = () => {
                             />
                             <div className="w-layout-vflex service-cards-text">
                                 <div className="heading-style-h5 text-dark">
-                                    Competitive pricing
+                                    competitive pricing
                                 </div>
                                 <p className="no-margin">
-                                    Best value guarantees with transparent pricing and no hidden fees 
+                                    best value guarantees with transparent pricing and no hidden fees 
                                     for your peace of mind.
                                 </p>
                             </div>

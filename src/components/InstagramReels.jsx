@@ -7,25 +7,25 @@ const InstagramReels = () => {
             id: 1,
             image: 'https://scontent.cdninstagram.com/v/t51.82787-15/521318285_17843972340536154_8218496205316094647_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=102&ig_cache_key=MzY3ODk3Nzk3NTQyNjM1Mjg5Mg%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjYwOHgxMDgwLnNkciJ9&_nc_ohc=81Lh-VA8tXQQ7kNvwGpNdDz&_nc_oc=AdnOYT_nR--tiuvihmf40WkMJwom3PBECEyUG7ENnT9stvixc_147VSGLTLJ6Qx5p00CdW1kZiP4d4OiljWiTpp-&_nc_ad=z-m&_nc_cid=2034&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=UZZtBPJS78KviqYjZrtMKg&oh=00_AfScIInzwSVObZOZ8HnJarY6IbAA7XIoTOr6VcgWaDge6g&oe=68845267',
             instagramUrl: 'https://www.instagram.com/reel/DMOWvoBxgb8/?utm_source=ig_web_copy_link&igsh=cGhzamZyc2w2aWpv',
-            title: 'Top 7 Places in Thailand'
+            title: 'top 7 places in thailand'
         },
         {
             id: 2,
             image: 'https://scontent.cdninstagram.com/v/t51.82787-15/522228456_17844635829536154_2987392949968574396_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=103&ig_cache_key=MzY4MTU4NTAyODI2Njc0NzU1Mw%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjYwOHgxMDgwLnNkciJ9&_nc_ohc=ZeHr07bNLpYQ7kNvwE-uAoA&_nc_oc=AdmiiOsf1hTItBZLlhju7qYbkUKrG_4-9jul9PjOrdt1_7GmuODWanRZyv0qhhLifHEkfC6lYfkUDymeLw0VNNPv&_nc_ad=z-m&_nc_cid=2034&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=UZZtBPJS78KviqYjZrtMKg&oh=00_AfSXfSSuVEj386x2LP2iXG3RfopzHY3TY6On5D_8HrdcCg&oe=68844E6F',
             instagramUrl: 'https://www.instagram.com/reel/DMXnhPMPGah/?utm_source=ig_web_copy_link',
-            title: 'Greece'
+            title: 'greece'
         },
         {
             id: 3,
             image: 'https://scontent.cdninstagram.com/v/t51.82787-15/521605017_17844481785536154_8550125261482198832_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=105&ig_cache_key=MzY4MDk0NTQ5MjkyMjQyNzQwMw%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjYwOHgxMDgwLnNkciJ9&_nc_ohc=c9QBeYPuncIQ7kNvwEGnrDp&_nc_oc=AdngmPCwlDv_TIhiyVPjTSISneVv7-VVMT3ameJN3ZrUbv-YojAIvjWdwnBCidgcO1paN5laAeCpad41m6fKD8Gf&_nc_ad=z-m&_nc_cid=2034&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=UZZtBPJS78KviqYjZrtMKg&oh=00_AfTAA5Z6wgnKOAqFxeujsSib2t10cXmsngzRhOF_CPvOKA&oe=68845181',
             instagramUrl: 'https://www.instagram.com/reel/DMVWGxfN2gL/?utm_source=ig_web_copy_link&igsh=ZWRhOGZzejlrMjFy',
-            title: '12 Jyotirlingas'
+            title: '12 jyotirlingas'
         },
         {
             id: 4,
             image: 'https://scontent.cdninstagram.com/v/t51.82787-15/521373794_17844664983536154_5550339114122322380_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=101&ig_cache_key=MzY4MTY3Mjc0NDE1NjcwNzQ5MQ%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjYwOHgxMDgwLnNkciJ9&_nc_ohc=nWksHiaEsukQ7kNvwHKNmDk&_nc_oc=Adl__KInoHNwJjT-zxYd4fQVqSEbPKbtpkx-0WYmEgV11j4RgvJYESI8rFv1W4Zy8CkNJcbHUXv1zVRuGScmmyPy&_nc_ad=z-m&_nc_cid=2034&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=trEjmasuruM_Ahio6OMPzg&oh=00_AfSCJdREKIS2pb--0z76n-Aa979Fm_LpPkQ7GixOCkniHg&oe=68868395',
             instagramUrl: 'https://www.instagram.com/reel/DMX7dq-srqj/?utm_source=ig_web_copy_link&igsh=MWlsZHQ4d21pa2RwaA==',
-            title: 'Dubai Marina'
+            title: 'dubai marina'
         }
     ];
 
@@ -38,8 +38,8 @@ const InstagramReels = () => {
     return (
         <div className="luxury-container">
             <div className="header-section">
-                <h2 className='!font-semibold !text-3xl'><i class="fab fa-instagram"></i> Discover Something Amazing from Our Instagram Travel Adventures!</h2>
-                <p className="subtitle">Check out our latest travel adventures and destination highlights</p>
+                <h2 className='!font-semibold !text-3xl flex justify-center items-center gap-1'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png?20200512141346' height={25} width={30}></img> discover something amazing from Our instagram travel adventures!</h2>
+                <p className="subtitle">check out our latest travel adventures and destination highlights</p>
             </div>
 
             <div className="posts-grid">

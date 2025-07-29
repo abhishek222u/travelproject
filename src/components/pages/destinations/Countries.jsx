@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import image from '../../../assets/spitivillage.jpg'
 
 const Countries = () => {
     const [showAll, setShowAll] = useState(false);
@@ -7,7 +8,7 @@ const Countries = () => {
     const allDestinations = [
         // Group Tours - Domestic
         { name: "Chardham Yatra", region: "India", duration: "10-12 Days", price: "₹32,000", image: "https://uttarakhandtourism.gov.in/assets/media/UTDB_media_1740661833CHAR-DHAM.jpg", path: "/countries/chardham-yatra" },
-        { name: "Spiti Valley Tour", region: "India", duration: "7-9 Days", price: "₹25,000", image: "https://www.shutterstock.com/shutterstock/photos/1747947332/display_1500/stock-photo-a-vertical-shot-of-spiti-valley-in-winter-with-frozen-river-and-snow-peak-mountains-1747947332.jpg", path: "/countries/spiti-valley" },
+        { name: "Spiti Valley Tour", region: "India", duration: "7-9 Days", price: "₹25,000", image: image, path: "/countries/spiti-valley" },
         { name: "Ladakh Bike Tour", region: "India", duration: "8-10 Days", price: "₹30,000", image: "https://gulliveradventures.com/wp-content/uploads/2022/06/motorcycle-trip-to-ladakh.jpg", path: "/countries/ladakh" },
 
         // Group Tours - International

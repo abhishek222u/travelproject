@@ -145,7 +145,7 @@ const CountryPage = () => {
                 name: 'Australia',
                 region: 'Oceania',
                 image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=600&fit=crop',
-                bannerImage: 'https://images.unsplash.com/photo-1524293368288-75bf5d618b1b?w=1920&h=1080&fit=crop',
+                bannerImage: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&h=1080&fit=crop',
                 overview: 'Explore the diverse landscapes of Australia, from the iconic Sydney Opera House to the Great Barrier Reef. Experience unique wildlife, stunning coastlines, and vibrant cities in the land Down Under.',
                 highlights: [
                     'Visit the iconic Sydney Opera House and Harbour Bridge',
@@ -426,7 +426,7 @@ const CountryPage = () => {
                 name: 'Singapore',
                 region: 'Asia',
                 image: 'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=500&h=600&fit=crop',
-                bannerImage: 'https://images.unsplash.com/photo-1508964942454-1324ef12dd90?w=1920&h=1080&fit=crop',
+                bannerImage: 'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=1920&h=1080&fit=crop',
                 overview: 'Experience the cosmopolitan city-state of Singapore with its modern skyline, diverse culture, and world-class attractions. A perfect blend of tradition and innovation.',
                 highlights: [
                     'Visit the iconic Marina Bay Sands and Gardens by the Bay',

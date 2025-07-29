@@ -13,7 +13,7 @@ const Footer = () => {
                                 className="w-layout-vflex footer-two-left-col"
                             >
                                 <h2 className="no-margin text-color-white">
-                                    Follow the latest travel destination updates from tripofai
+                                    follow the latest travel destination updates from tripofai
                                 </h2>
                                 <div className="w-layout-hflex social-links-wrapper">
                                     <a

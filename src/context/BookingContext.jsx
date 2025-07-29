@@ -13,9 +13,9 @@ export const useBooking = () => {
 
 // Email configuration
 const EMAIL_CONFIG = {
-  serviceId: 'service_wtuxzpc',
-  templateId: 'template_0it8dks',
-  publicKey: 'zOXokwZc7Cetr3eXY'
+  serviceId: 'service_1tsl8jq',
+  templateId: 'template_hf8onk9',
+  publicKey: '7PLkhJ3hq8MkcrhPK'
 }
 
 export const BookingProvider = ({ children }) => {
@@ -50,7 +50,7 @@ export const BookingProvider = ({ children }) => {
 
       // Prepare email data
       const emailData = {
-        to_email: formData.email,
+        // to_email: formData.email,
         customer_name: formData.name,
         customer_email: formData.email,
         customer_phone: formData.phone,
@@ -62,6 +62,7 @@ export const BookingProvider = ({ children }) => {
         booking_time: new Date().toLocaleTimeString()
       }
 
+      console.log(emailData, 'emailData')
       // Send confirmation email to customer
       await emailjs.send(
         EMAIL_CONFIG.serviceId,
@@ -81,7 +82,7 @@ export const BookingProvider = ({ children }) => {
   const submitBooking = async (formData) => {
     try {
       const result = await sendBookingEmail(formData)
-      
+
       if (result.success) {
         closeBooking()
         return { success: true, bookingDetails: formData }

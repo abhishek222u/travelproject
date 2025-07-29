@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { X, Phone, Mail, MessageCircle, MapPin, Package, User, Send } from 'lucide-react'
 
-const BookingPopup = ({ 
-    isOpen, 
-    onClose, 
-    packageData, 
+const BookingPopup = ({
+    isOpen,
+    onClose,
+    packageData,
     onSubmit,
     title = "Book Your Dream Trip",
     buttonText = "Submit Booking Request"
@@ -51,7 +51,12 @@ const BookingPopup = ({
         } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
             newErrors.email = 'Email is invalid'
         }
-        if (!formData.phone.trim()) newErrors.phone = 'Phone number is required'
+        if (!formData.phone.trim()) {
+            newErrors.phone = 'Phone number is required';
+        } else if (!/^\d{10}$/.test(formData.phone.trim())) {
+            newErrors.phone = 'Phone number must be 10 digits';
+        }
+
         if (!formData.location.trim()) newErrors.location = 'Location is required'
 
         setErrors(newErrors)

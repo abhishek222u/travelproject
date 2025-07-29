@@ -1364,7 +1364,7 @@ const DestinationCard = ({ destination, category }) => {
                 </div>
                 <div className="destination-cards-two-text">
                     <div className="destination-card-two-name">
-                        <div className="text-color-white small-text">{category}</div>
+                        {/* <div className="text-color-white small-text">{category}</div> */}
                         <div className="heading-style-h6 text-color-white">{title}</div>
                         <div className="w-layout-hflex card-price">
                             <div className="text-light-white">From </div>

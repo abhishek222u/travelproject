@@ -4,7 +4,7 @@
   right: 20px;
   z-index: 1000;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: flex-end;
   gap: 10px;
 }
@@ -49,7 +49,7 @@
   flex-direction: column;
   gap: 8px;
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(-20px);
   pointer-events: none;
   transition: all 0.3s ease;
 }
@@ -135,11 +135,11 @@
 @keyframes slideInFromRight {
   from {
     opacity: 0;
-    transform: translateX(30px);
+    transform: translateX(30px) translateY(-10px);
   }
   to {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(0) translateY(0);
   }
 }
 

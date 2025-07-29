@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from "../assets/TRIPOFAI.svg"
+import { Facebook, Instagram, Linkedin } from 'lucide-react'
 
 const Footer = () => {
     return (
@@ -22,13 +23,7 @@ const Footer = () => {
                                         rel="noopener noreferrer"
                                         className="social-icon w-inline-block"
                                     >
-                                        <img
-                                            width="Auto"
-                                            loading="lazy"
-                                            alt="Facebook"
-                                            src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg"
-                                            className="social-logo"
-                                        />
+                                        <Facebook className="social-logo" size={30} color="white" />
                                     </a>
                                     <a
                                         href="https://www.instagram.com/tripofai/"
@@ -36,13 +31,7 @@ const Footer = () => {
                                         rel="noopener noreferrer"
                                         className="social-icon w-inline-block"
                                     >
-                                        <img
-                                            width="Auto"
-                                            loading="lazy"
-                                            alt="Instagram"
-                                            src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg"
-                                            className="social-logo"
-                                        />
+                                        <Instagram className="social-logo" size={30} color="white" />
                                     </a>
                                     <a
                                         href="https://www.linkedin.com/company/tripofai"
@@ -50,13 +39,7 @@ const Footer = () => {
                                         rel="noopener noreferrer"
                                         className="social-icon w-inline-block"
                                     >
-                                        <img
-                                            width="Auto"
-                                            loading="lazy"
-                                            alt="LinkedIn"
-                                            src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg"
-                                            className="social-logo"
-                                        />
+                                        <Linkedin className="social-logo" size={30} color="white" />
                                     </a>
                                 </div>
                             </div>

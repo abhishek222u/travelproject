@@ -84,60 +84,60 @@ const CountryPage = () => {
     const getSEOData = (countryName) => {
         const seoData = {
             'thailand': {
-                title: 'Thailand Travel Packages | Bangkok, Phuket, Koh Samui Tours | TripOfAI',
+                title: 'Thailand Travel Packages | Bangkok, Phuket, Koh Samui Tours | tripofai',
                 description: 'Explore Thailand with our curated travel packages. Visit Bangkok temples, relax on Phuket beaches, and experience authentic Thai culture. Book your dream Thailand vacation today!',
                 keywords: 'Thailand travel, Bangkok tours, Phuket packages, Koh Samui, Thai culture, beach vacation, temple tours'
             },
             'dubai': {
-                title: 'Dubai Travel Packages | Luxury Tours & Desert Adventures | TripOfAI',
+                title: 'Dubai Travel Packages | Luxury Tours & Desert Adventures | tripofai',
                 description: 'Experience the magic of Dubai with luxury tours, desert safaris, and iconic landmarks. From Burj Khalifa to desert adventures, book your perfect Dubai vacation.',
                 keywords: 'Dubai travel, luxury tours, desert safari, Burj Khalifa, shopping, UAE vacation'
             },
             'maldives': {
-                title: 'Maldives Travel Packages | Luxury Island Resorts & Water Villas | TripOfAI',
+                title: 'Maldives Travel Packages | Luxury Island Resorts & Water Villas | tripofai',
                 description: 'Escape to paradise with our Maldives travel packages. Experience overwater villas, pristine beaches, and crystal-clear waters. Book your dream island getaway.',
                 keywords: 'Maldives travel, overwater villas, island resorts, beach vacation, luxury travel, honeymoon packages'
             },
             'europe': {
-                title: 'Europe Travel Packages | Multi-Country Tours & Cultural Experiences | TripOfAI',
+                title: 'Europe Travel Packages | Multi-Country Tours & Cultural Experiences | tripofai',
                 description: 'Discover Europe with our comprehensive travel packages. From Paris to Rome, experience rich culture, history, and diverse landscapes across European destinations.',
                 keywords: 'Europe travel, European tours, cultural experiences, multi-country tours, historical sites'
             },
             'australia': {
-                title: 'Australia Travel Packages | Sydney, Melbourne, Great Barrier Reef Tours | TripOfAI',
+                title: 'Australia Travel Packages | Sydney, Melbourne, Great Barrier Reef Tours | tripofai',
                 description: 'Explore Australia with our travel packages. Visit Sydney Opera House, Great Barrier Reef, and experience unique wildlife. Book your Australian adventure.',
                 keywords: 'Australia travel, Sydney tours, Great Barrier Reef, wildlife, adventure tours'
             },
             'rajasthan': {
-                title: 'Rajasthan Travel Packages | Jaipur, Udaipur, Jodhpur Tours | TripOfAI',
+                title: 'Rajasthan Travel Packages | Jaipur, Udaipur, Jodhpur Tours | tripofai',
                 description: 'Experience the royal heritage of Rajasthan with our travel packages. Visit Jaipur, Udaipur, Jodhpur and explore palaces, forts, and desert landscapes.',
                 keywords: 'Rajasthan travel, Jaipur tours, Udaipur packages, royal heritage, desert tours, palace visits'
             },
             'kerala': {
-                title: 'Kerala Travel Packages | Backwaters, Ayurveda & Hill Stations | TripOfAI',
+                title: 'Kerala Travel Packages | Backwaters, Ayurveda & Hill Stations | tripofai',
                 description: 'Discover Kerala with our travel packages. Experience backwaters, Ayurveda treatments, and scenic hill stations. Book your peaceful Kerala getaway.',
                 keywords: 'Kerala travel, backwaters, Ayurveda, hill stations, houseboat tours, wellness retreats'
             },
             'goa': {
-                title: 'Goa Travel Packages | Beaches, Nightlife & Portuguese Heritage | TripOfAI',
+                title: 'Goa Travel Packages | Beaches, Nightlife & Portuguese Heritage | tripofai',
                 description: 'Experience Goa with our travel packages. Enjoy pristine beaches, vibrant nightlife, and Portuguese heritage. Book your perfect Goa vacation.',
                 keywords: 'Goa travel, beach vacation, nightlife, Portuguese heritage, coastal tours'
             },
             'ladakh': {
-                title: 'Ladakh Travel Packages | Leh, Nubra Valley & Adventure Tours | TripOfAI',
+                title: 'Ladakh Travel Packages | Leh, Nubra Valley & Adventure Tours | tripofai',
                 description: 'Explore Ladakh with our adventure travel packages. Visit Leh, Nubra Valley, and experience high-altitude adventures in the Himalayas.',
                 keywords: 'Ladakh travel, Leh tours, Nubra Valley, adventure tours, Himalayan trekking'
             },
             'manali': {
-                title: 'Manali Travel Packages | Hill Station Tours & Adventure Activities | TripOfAI',
+                title: 'Manali Travel Packages | Hill Station Tours & Adventure Activities | tripofai',
                 description: 'Discover Manali with our travel packages. Experience scenic hill stations, adventure activities, and peaceful mountain retreats in the Himalayas.',
                 keywords: 'Manali travel, hill station tours, adventure activities, mountain retreats, Himalayan tours'
             }
         };
 
         return seoData[countryName] || {
-            title: `${getDisplayName(countryName)} Travel Packages | TripOfAI`,
-            description: `Explore ${getDisplayName(countryName)} with our curated travel packages. Book your dream vacation with TripOfAI and create unforgettable memories.`,
+            title: `${getDisplayName(countryName)} Travel Packages | tripofai`,
+            description: `Explore ${getDisplayName(countryName)} with our curated travel packages. Book your dream vacation with tripofai and create unforgettable memories.`,
             keywords: `${getDisplayName(countryName)} travel, vacation packages, tours, travel booking`
         };
     };

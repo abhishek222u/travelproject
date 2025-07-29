@@ -93,7 +93,7 @@ const LandingPage = () => {
     
     switch(action) {
       case 'book':
-        message = `Hi! I'm interested in booking a trip with TripOfAI. Can you please provide me with more details about your packages?`
+        message = `Hi! I'm interested in booking a trip with tripofai. Can you please provide me with more details about your packages?`
         break
       case 'itinerary':
         message = `Hi! I would like to get a free customized itinerary. Please share the best options for my trip.`
@@ -102,7 +102,7 @@ const LandingPage = () => {
         message = `Hi! I'm looking for pricing information for travel packages. Can you please share the current rates and any ongoing offers?`
         break
       default:
-        message = `Hi! I'm interested in traveling with TripOfAI. Can you please help me with more information?`
+        message = `Hi! I'm interested in traveling with tripofai. Can you please help me with more information?`
     }
     
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
@@ -112,8 +112,8 @@ const LandingPage = () => {
   return (
     <>
       <SEO 
-        title="TripOfAI - Your AI-Powered Travel Companion | Best Travel Packages"
-        description="Discover amazing travel packages with TripOfAI. From domestic getaways to international adventures, we offer curated experiences with AI-powered recommendations. Book your dream vacation today!"
+        title="tripofai – Smart Travel Solutions with AI-Powered Planning"
+        description="Discover amazing travel packages with tripofai. From domestic getaways to international adventures, we offer curated experiences with AI-powered recommendations. Book your dream vacation today!"
         keywords="travel packages, domestic tours, international trips, AI travel, vacation booking, travel agency, holiday packages, adventure tours"
       />
       <Header />

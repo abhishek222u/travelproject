@@ -35,10 +35,10 @@ const ThankYouPage = () => {
 
     return (
         <div className="thank-you-page">
-            <SEO 
-                title="Thank You - Booking Confirmed | TripOfAI Travel Services"
-                description="Thank you for choosing TripOfAI for your travel needs. Your booking request has been submitted successfully. We'll contact you soon to confirm your dream vacation."
-                keywords="booking confirmation, travel booking, thank you, TripOfAI, travel services"
+            <SEO
+                title="Thank You - Booking Confirmed | tripofai Travel Services"
+                description="Thank you for choosing tripofai for your travel needs. Your booking request has been submitted successfully. We'll contact you soon to confirm your dream vacation."
+                keywords="booking confirmation, travel booking, thank you, tripofai, travel services"
             />
             {showConfetti && <div className="confetti-container">
                 {[...Array(50)].map((_, i) => (

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
-import { CheckCircle, Mail, Phone, Calendar, MapPin, ArrowRight, Home, Star } from 'lucide-react'
+import { CheckCircle, Mail, Phone, Calendar, MapPin, ArrowRight, Home, Star, Users } from 'lucide-react'
+import SEO from '../components/SEO'
 
 const ThankYouPage = () => {
     const navigate = useNavigate()
@@ -34,6 +35,11 @@ const ThankYouPage = () => {
 
     return (
         <div className="thank-you-page">
+            <SEO 
+                title="Thank You - Booking Confirmed | TripOfAI Travel Services"
+                description="Thank you for choosing TripOfAI for your travel needs. Your booking request has been submitted successfully. We'll contact you soon to confirm your dream vacation."
+                keywords="booking confirmation, travel booking, thank you, TripOfAI, travel services"
+            />
             {showConfetti && <div className="confetti-container">
                 {[...Array(50)].map((_, i) => (
                     <div
@@ -90,6 +96,24 @@ const ThankYouPage = () => {
                                         <p>{bookingDetails.phone}</p>
                                     </div>
                                 </div>
+                                {bookingDetails.numberOfTravellers && (
+                                    <div className="summary-item">
+                                        <Users size={20} />
+                                        <div>
+                                            <strong>Number of Travellers</strong>
+                                            <p>{bookingDetails.numberOfTravellers}</p>
+                                        </div>
+                                    </div>
+                                )}
+                                {bookingDetails.dateOfTravel && (
+                                    <div className="summary-item">
+                                        <Calendar size={20} />
+                                        <div>
+                                            <strong>Date of Travel</strong>
+                                            <p>{new Date(bookingDetails.dateOfTravel).toLocaleDateString()}</p>
+                                        </div>
+                                    </div>
+                                )}
                             </div>
                         </div>
                     )}

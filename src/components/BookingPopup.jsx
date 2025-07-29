@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { X, Phone, Mail, MessageCircle, MapPin, Package, User, Send } from 'lucide-react'
+import { X, Phone, Mail, MessageCircle, MapPin, Package, User, Send, Users, Calendar } from 'lucide-react'
 
 const BookingPopup = ({
     isOpen,
@@ -7,7 +7,8 @@ const BookingPopup = ({
     packageData,
     onSubmit,
     title = "Book Your Dream Trip",
-    buttonText = "Submit Booking Request"
+    buttonText = "Submit Booking Request",
+    isVisaConsultation = false
 }) => {
     const [formData, setFormData] = useState({
         name: '',
@@ -15,6 +16,10 @@ const BookingPopup = ({
         phone: '',
         whatsapp: '',
         location: '',
+        numberOfTravellers: '',
+        dateOfTravel: '',
+        originCountry: '',
+        destinationCountry: '',
         packageInfo: packageData?.name || '',
         additionalRequests: ''
     })
@@ -58,6 +63,34 @@ const BookingPopup = ({
         }
 
         if (!formData.location.trim()) newErrors.location = 'Location is required'
+        
+        if (!formData.numberOfTravellers.trim()) {
+            newErrors.numberOfTravellers = 'Number of travellers is required';
+        } else if (!/^\d+$/.test(formData.numberOfTravellers.trim()) || parseInt(formData.numberOfTravellers) < 1) {
+            newErrors.numberOfTravellers = 'Please enter a valid number of travellers (minimum 1)';
+        }
+
+        if (!formData.dateOfTravel.trim()) {
+            newErrors.dateOfTravel = 'Date of travel is required';
+        } else {
+            const selectedDate = new Date(formData.dateOfTravel);
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+            
+            if (selectedDate < today) {
+                newErrors.dateOfTravel = 'Date of travel cannot be in the past';
+            }
+        }
+
+        // Visa-specific validation
+        if (isVisaConsultation) {
+            if (!formData.originCountry.trim()) {
+                newErrors.originCountry = 'Origin country is required';
+            }
+            if (!formData.destinationCountry.trim()) {
+                newErrors.destinationCountry = 'Destination country is required';
+            }
+        }
 
         setErrors(newErrors)
         return Object.keys(newErrors).length === 0
@@ -219,9 +252,80 @@ const BookingPopup = ({
                             </div>
                         </div>
 
+                        <div className="form-row">
+                            <div className="form-group">
+                                <label htmlFor="numberOfTravellers">
+                                    <Users size={18} />
+                                    No. of Travellers *
+                                </label>
+                                <input
+                                    type="number"
+                                    id="numberOfTravellers"
+                                    name="numberOfTravellers"
+                                    value={formData.numberOfTravellers}
+                                    onChange={handleInputChange}
+                                    className={errors.numberOfTravellers ? 'error' : ''}
+                                    placeholder="Enter number of travellers"
+                                    min="1"
+                                />
+                                {errors.numberOfTravellers && <span className="error-message">{errors.numberOfTravellers}</span>}
+                            </div>
 
+                            <div className="form-group">
+                                <label htmlFor="dateOfTravel">
+                                    <Calendar size={18} />
+                                    Date of Travel *
+                                </label>
+                                <input
+                                    type="date"
+                                    id="dateOfTravel"
+                                    name="dateOfTravel"
+                                    value={formData.dateOfTravel}
+                                    onChange={handleInputChange}
+                                    className={errors.dateOfTravel ? 'error' : ''}
+                                    placeholder="Select travel date"
+                                />
+                                {errors.dateOfTravel && <span className="error-message">{errors.dateOfTravel}</span>}
+                            </div>
+                        </div>
 
+                        {isVisaConsultation && (
+                            <div className="form-row">
+                                <div className="form-group">
+                                    <label htmlFor="originCountry">
+                                        <MapPin size={18} />
+                                        Origin Country *
+                                    </label>
+                                    <input
+                                        type="text"
+                                        id="originCountry"
+                                        name="originCountry"
+                                        value={formData.originCountry}
+                                        onChange={handleInputChange}
+                                        className={errors.originCountry ? 'error' : ''}
+                                        placeholder="Enter your origin country"
+                                    />
+                                    {errors.originCountry && <span className="error-message">{errors.originCountry}</span>}
+                                </div>
 
+                                <div className="form-group">
+                                    <label htmlFor="destinationCountry">
+                                        <MapPin size={18} />
+                                        Destination Country *
+                                    </label>
+                                    <input
+                                        type="text"
+                                        id="destinationCountry"
+                                        name="destinationCountry"
+                                        value={formData.destinationCountry}
+                                        onChange={handleInputChange}
+                                        className={errors.destinationCountry ? 'error' : ''}
+                                        placeholder="Enter destination country"
+                                    />
+                                    {errors.destinationCountry && <span className="error-message">{errors.destinationCountry}</span>}
+                                </div>
+                            </div>
+                        )}
 
                         <button
                             type="submit"

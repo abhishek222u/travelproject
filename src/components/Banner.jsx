@@ -9,7 +9,7 @@ const Banner = () => {
             id: 'switzerland-tour',
             name: 'Switzerland Tour - 5 night 6 days',
             duration: '5 night 6 days',
-            price: '$1600.00',
+            price: '$2425.00',
             visaRequirement: 'Visa Required',
             image: 'https://cdn.prod.website-files.com/672d8f75dabc438e6086ed62/677b7d8f3fc26d93686b2d21_Switzerland%20one.webp'
         }
@@ -39,9 +39,9 @@ const Banner = () => {
                             <div className="w-layout-vflex card-three-text-box">
                                 <div className="w-layout-hflex card-three-price">
                                     <div className="small-text text-strike-through text-light-white">
-                                        $1800.00
+                                        $2900.00
                                     </div>
-                                    <div className="heading-style-h4 text-color-white">$1600.00</div>
+                                    <div className="heading-style-h4 text-color-white">$2425.00</div>
                                 </div>
                                 <div className="offer-small-text">Offer price per person</div>
                             </div>

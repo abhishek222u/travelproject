@@ -53,7 +53,7 @@ const Countries = () => {
         { name: "Shimla", region: "India", duration: "3-4 Days", price: "₹14,000", image: "https://c8.alamy.com/comp/MY2D5D/shimla-is-one-of-indias-most-popular-hill-resorts-buzzing-with-a-happy-flow-of-indian-vacationers-and-full-of-relics-of-its-previous-life-MY2D5D.jpg", path: "/countries/shimla" },
 
         // Honeymoon Packages - International
-        { name: "Switzerland", region: "Europe", duration: "7-9 Days", price: "$1,600", visa: "Required", image: "https://images.pexels.com/photos/28677183/pexels-photo-28677183.jpeg?cs=srgb&dl=pexels-gsn-travel-28677183.jpg&fm=jpg", path: "/countries/switzerland" },
+        { name: "Switzerland", region: "Europe", duration: "7-9 Days", price: "$2,425", visa: "Required", image: "https://images.pexels.com/photos/28677183/pexels-photo-28677183.jpeg?cs=srgb&dl=pexels-gsn-travel-28677183.jpg&fm=jpg", path: "/countries/switzerland" },
 
         // Adventure Tours - Domestic
         { name: "Rishikesh Rafting", region: "India", duration: "2-3 Days", price: "₹6,000", image: "https://media1.thrillophilia.com/filestore/l1stgsdtm1wlcgkfhkg49pers7qj_WDEFRGTYH.png", path: "/countries/rishikesh" },

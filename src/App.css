@@ -13493,7 +13493,7 @@ blockquote {
 }
 
 .booking-popup-content {
-  padding: 20px;
+  padding: 14px;
 }
 
 .package-preview {
@@ -13501,7 +13501,7 @@ blockquote {
   gap: 15px;
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   border-radius: 12px;
-  padding: 15px;
+  padding: 2px;
   margin-bottom: 20px;
   border: 1px solid #e0e0e0;
 }
@@ -13560,7 +13560,7 @@ blockquote {
 .booking-form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 8px;
 }
 
 .form-row {
@@ -13631,7 +13631,7 @@ blockquote {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   border: none;
-  padding: 16px 32px;
+  padding: 10px;
   border-radius: 12px;
   font-size: 1.1rem;
   font-weight: 600;
@@ -13707,7 +13707,7 @@ blockquote {
   }
 
   .booking-popup-content {
-    padding: 20px;
+    padding: 14px;
   }
 
   .package-preview {
@@ -13741,11 +13741,11 @@ blockquote {
   }
 
   .booking-popup-content {
-    padding: 15px;
+    padding: 14px;
   }
 
   .package-preview {
-    padding: 15px;
+    padding: 2px;
   }
 }
 

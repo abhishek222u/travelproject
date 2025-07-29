@@ -12,11 +12,13 @@ import Partners from '../components/Partners'
 import PopularCities from '../components/PopularCities'
 import Services from '../components/Services'
 import TestimonialSlider from '../components/Testimonial'
+import SEO from '../components/SEO'
 import { useBooking } from '../context/BookingContext'
 import { motion } from 'framer-motion'
+import { MessageCircle, Phone, Calendar } from 'lucide-react'
 
 const LandingPage = () => {
-  const { isBookingOpen, currentPackage, closeBooking, submitBooking, bookingTitle, bookingButtonText } = useBooking()
+  const { isBookingOpen, currentPackage, closeBooking, submitBooking, bookingTitle, bookingButtonText, isVisaConsultation } = useBooking()
   const navigate = useNavigate()
 
   // Animation variants - using transform to prevent layout shifts
@@ -85,8 +87,35 @@ const LandingPage = () => {
     }
   }
 
+  const handleWhatsAppContact = (action) => {
+    const phoneNumber = '+919818149806'
+    let message = ''
+    
+    switch(action) {
+      case 'book':
+        message = `Hi! I'm interested in booking a trip with TripOfAI. Can you please provide me with more details about your packages?`
+        break
+      case 'itinerary':
+        message = `Hi! I would like to get a free customized itinerary. Please share the best options for my trip.`
+        break
+      case 'pricing':
+        message = `Hi! I'm looking for pricing information for travel packages. Can you please share the current rates and any ongoing offers?`
+        break
+      default:
+        message = `Hi! I'm interested in traveling with TripOfAI. Can you please help me with more information?`
+    }
+    
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
+    window.open(whatsappUrl, '_blank')
+  }
+
   return (
     <>
+      <SEO 
+        title="TripOfAI - Your AI-Powered Travel Companion | Best Travel Packages"
+        description="Discover amazing travel packages with TripOfAI. From domestic getaways to international adventures, we offer curated experiences with AI-powered recommendations. Book your dream vacation today!"
+        keywords="travel packages, domestic tours, international trips, AI travel, vacation booking, travel agency, holiday packages, adventure tours"
+      />
       <Header />
       <HeroSection />
       <About />
@@ -188,6 +217,7 @@ const LandingPage = () => {
         onSubmit={handleBookingSubmit}
         title={bookingTitle}
         buttonText={bookingButtonText}
+        isVisaConsultation={isVisaConsultation}
       />
     </>
   )

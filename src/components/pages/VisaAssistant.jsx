@@ -8,7 +8,7 @@ const VisaAssistant = () => {
     const { openBooking } = useBooking()
 
     const handleBookNow = () => {
-        openBooking(null, 'Book Your Visa Consultation', 'Book Now')
+        openBooking(null, 'Book Your Visa Consultation', 'Book Now', true)
     }
     return (
         <section className="relative pb-10 px-4 sm:px-6 lg:px-8 overflow-hidden">

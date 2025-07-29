@@ -24,16 +24,18 @@ export const BookingProvider = ({ children }) => {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [bookingTitle, setBookingTitle] = useState("Book Your Dream Trip")
   const [bookingButtonText, setBookingButtonText] = useState("Submit Booking Request")
+  const [isVisaConsultation, setIsVisaConsultation] = useState(false)
 
   // Initialize EmailJS
   React.useEffect(() => {
     emailjs.init(EMAIL_CONFIG.publicKey)
   }, [])
 
-  const openBooking = (packageData, title = "Book Your Dream Trip", buttonText = "Submit Booking Request") => {
+  const openBooking = (packageData, title = "Book Your Dream Trip", buttonText = "Submit Booking Request", isVisa = false) => {
     setCurrentPackage(packageData)
     setBookingTitle(title)
     setBookingButtonText(buttonText)
+    setIsVisaConsultation(isVisa)
     setIsBookingOpen(true)
   }
 
@@ -42,6 +44,7 @@ export const BookingProvider = ({ children }) => {
     setCurrentPackage(null)
     setBookingTitle("Book Your Dream Trip")
     setBookingButtonText("Submit Booking Request")
+    setIsVisaConsultation(false)
   }
 
   const sendBookingEmail = async (formData) => {
@@ -56,6 +59,10 @@ export const BookingProvider = ({ children }) => {
         customer_phone: formData.phone,
         customer_whatsapp: formData.whatsapp || 'Not provided',
         customer_location: formData.location,
+        number_of_travellers: formData.numberOfTravellers || 'Not specified',
+        date_of_travel: formData.dateOfTravel || 'Not specified',
+        origin_country: formData.originCountry || 'Not specified',
+        destination_country: formData.destinationCountry || 'Not specified',
         package_name: formData.packageInfo,
         additional_requests: formData.additionalRequests || 'None',
         booking_date: new Date().toLocaleDateString(),
@@ -101,6 +108,7 @@ export const BookingProvider = ({ children }) => {
     isSubmitting,
     bookingTitle,
     bookingButtonText,
+    isVisaConsultation,
     openBooking,
     closeBooking,
     submitBooking,

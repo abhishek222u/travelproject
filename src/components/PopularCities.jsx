@@ -140,13 +140,13 @@ const PopularCities = () => {
                                                         data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_price_%22%2C%22to%22%3A%22innerHTML%22%7D%5D"
                                                         className="card-one-sell-price"
                                                     >
-                                                        $&nbsp;182.00&nbsp;USD
+                                                        $&nbsp;2,425.00&nbsp;USD
                                                     </div>
                                                     <div
                                                         data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_compare_at_price_7dr10dr%22%2C%22to%22%3A%22innerHTML%22%7D%5D"
                                                         className="text-strike-through"
                                                     >
-                                                        $&nbsp;202.00&nbsp;USD
+                                                        $&nbsp;2,900.00&nbsp;USD
                                                     </div>
                                                 </div>
                                             </div>

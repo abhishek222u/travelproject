@@ -5,11 +5,13 @@ import Header from '../components/pages/destinations/Header'
 import TopDestinations from '../components/pages/destinations/TopDestinations'
 import Partners from '../components/Partners'
 import BookingPopup from '../components/BookingPopup'
+import SEO from '../components/SEO'
 import { useBooking } from '../context/BookingContext'
 import { useNavigate } from 'react-router-dom'
+import { MessageCircle, Phone, Calendar } from 'lucide-react'
 
 const DestinationsPage = () => {
-    const { isBookingOpen, currentPackage, closeBooking, submitBooking, bookingTitle, bookingButtonText } = useBooking()
+    const { isBookingOpen, currentPackage, closeBooking, submitBooking, bookingTitle, bookingButtonText, isVisaConsultation } = useBooking()
     const navigate = useNavigate()
 
     const handleBookingSubmit = async (formData) => {
@@ -28,8 +30,35 @@ const DestinationsPage = () => {
         }
     }
 
+    const handleWhatsAppContact = (action) => {
+        const phoneNumber = '+919818149806'
+        let message = ''
+        
+        switch(action) {
+            case 'book':
+                message = `Hi! I'm interested in booking a trip with TripOfAI. Can you please provide me with more details about your packages?`
+                break
+            case 'itinerary':
+                message = `Hi! I would like to get a free customized itinerary. Please share the best options for my trip.`
+                break
+            case 'pricing':
+                message = `Hi! I'm looking for pricing information for travel packages. Can you please share the current rates and any ongoing offers?`
+                break
+            default:
+                message = `Hi! I'm interested in traveling with TripOfAI. Can you please help me with more information?`
+        }
+        
+        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
+        window.open(whatsappUrl, '_blank')
+    }
+
     return (
         <>
+            <SEO 
+                title="Explore Travel Destinations | Domestic & International Tours | TripOfAI"
+                description="Explore our curated collection of travel destinations. From scenic domestic getaways to exotic international adventures, find your perfect vacation package with TripOfAI."
+                keywords="travel destinations, domestic tours, international trips, vacation packages, holiday destinations, adventure tours, travel booking"
+            />
             <Header />
             <Banner />
             <Partners />
@@ -44,6 +73,7 @@ const DestinationsPage = () => {
                 onSubmit={handleBookingSubmit}
                 title={bookingTitle}
                 buttonText={bookingButtonText}
+                isVisaConsultation={isVisaConsultation}
             />
         </>
     )

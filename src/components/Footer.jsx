@@ -17,41 +17,44 @@ const Footer = () => {
                                 </h2>
                                 <div className="w-layout-hflex social-links-wrapper">
                                     <a
-                                        href="https://www.facebook.com"
+                                        href="https://www.facebook.com/tripofai"
                                         target="_blank"
+                                        rel="noopener noreferrer"
                                         className="social-icon w-inline-block"
                                     >
                                         <img
                                             width="Auto"
                                             loading="lazy"
-                                            alt="Icon"
-                                            src="https://cdn.prod.website-files.com/66920f2a1e03460f2a6e88a5/678e1a2dccc83e5e6cc448d3_Facebook-3.svg"
+                                            alt="Facebook"
+                                            src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg"
                                             className="social-logo"
                                         />
                                     </a>
                                     <a
-                                        href="https://www.instagram.com"
+                                        href="https://www.instagram.com/tripofai/"
                                         target="_blank"
+                                        rel="noopener noreferrer"
                                         className="social-icon w-inline-block"
                                     >
                                         <img
                                             width="Auto"
                                             loading="lazy"
-                                            alt="Icon"
-                                            src="https://cdn.prod.website-files.com/66920f2a1e03460f2a6e88a5/678e1a2c7337910afa2f08a1_instagram-2%201.svg"
+                                            alt="Instagram"
+                                            src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg"
                                             className="social-logo"
                                         />
                                     </a>
                                     <a
-                                        href="https://www.youtube.com"
+                                        href="https://www.linkedin.com/company/tripofai"
                                         target="_blank"
+                                        rel="noopener noreferrer"
                                         className="social-icon w-inline-block"
                                     >
                                         <img
                                             width="Auto"
                                             loading="lazy"
-                                            alt="Icon"
-                                            src="https://cdn.prod.website-files.com/66920f2a1e03460f2a6e88a5/678e1a2c24b89f998de40e98_Youtube.svg"
+                                            alt="LinkedIn"
+                                            src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg"
                                             className="social-logo"
                                         />
                                     </a>

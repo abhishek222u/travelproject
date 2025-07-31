@@ -11,25 +11,25 @@ const InstagramReels = () => {
             id: 1,
             image: thailandImage,
             instagramUrl: 'https://www.instagram.com/reel/DMOWvoBxgb8/?utm_source=ig_web_copy_link&igsh=cGhzamZyc2w2aWpv',
-            title: 'Top 7 places in thailand'
+            title: 'top 7 places in thailand'
         },
         {
             id: 2,
             image: greeceImage,
             instagramUrl: 'https://www.instagram.com/reel/DMXnhPMPGah/?utm_source=ig_web_copy_link',
-            title: 'Greece'
+            title: 'greece'
         },
         {
             id: 3,
             image: shivaImage,
             instagramUrl: 'https://www.instagram.com/reel/DMVWGxfN2gL/?utm_source=ig_web_copy_link&igsh=ZWRhOGZzejlrMjFy',
-            title: '12 Jyotirlingas'
+            title: '12 jyotirlingas'
         },
         {
             id: 4,
             image: dubaiImage,
             instagramUrl: 'https://www.instagram.com/reel/DMX7dq-srqj/?utm_source=ig_web_copy_link&igsh=MWlsZHQ4d21pa2RwaA==',
-            title: 'Dubai Marina'
+            title: 'dubai marina'
         }
     ];
 
@@ -43,7 +43,7 @@ const InstagramReels = () => {
         <div className="luxury-container">
             <div className="header-section">
                 <h2 className='!font-semibold !text-3xl flex justify-center items-center gap-2'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png?20200512141346' height={25} width={30}></img> discover something amazing from Our instagram travel adventures!</h2>
-                <p className="subtitle">Check out our latest travel adventures and destination highlights</p>
+                <p className="subtitle">check out our latest travel adventures and destination highlights</p>
             </div>
 
             <div className="posts-grid">

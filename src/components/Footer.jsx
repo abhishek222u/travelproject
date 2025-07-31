@@ -92,7 +92,7 @@ const Footer = () => {
             </section>
             <section className="footer-bottom footer-two-bottom">
                 <div className="w-layout-blockcontainer container w-container">
-                    <div className="footer-bottom-locations">
+                    {/* <div className="footer-bottom-locations">
                         <a
                             href="https://exploreza.webflow.io/countries/usa"
                             className="link-style-four"
@@ -195,6 +195,9 @@ const Footer = () => {
                         >
                             India
                         </a>
+                    </div> */}
+                    <div className="footer-description" style={{ color: 'white', fontSize: '0.95rem', textAlign: 'center', lineHeight: '1.6' }}>
+                        tripofai is a travel brand by Housofai Technologies Private Limited, committed to delivering intelligent, seamless, and personalized travel experiences powered by advanced technology.
                     </div>
                 </div>
             </section>

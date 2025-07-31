@@ -14296,3 +14296,10 @@ blockquote {
     padding: 12px;
   }
 }
+
+.footer-description {
+  font-family: 'Inter', sans-serif;
+  max-width: 900px;
+  margin: 1rem auto 0 auto;
+  opacity: 0.85;
+}

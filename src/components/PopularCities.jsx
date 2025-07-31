@@ -100,13 +100,13 @@ const PopularCities = () => {
                                                         data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_price_%22%2C%22to%22%3A%22innerHTML%22%7D%5D"
                                                         className="card-one-sell-price"
                                                     >
-                                                        $&nbsp;244.00&nbsp;USD
+                                                        $&nbsp;369.00&nbsp;USD
                                                     </div>
                                                     <div
                                                         data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_compare_at_price_7dr10dr%22%2C%22to%22%3A%22innerHTML%22%7D%5D"
                                                         className="text-strike-through"
                                                     >
-                                                        $&nbsp;274.00&nbsp;USD
+                                                        $&nbsp;421.00&nbsp;USD
                                                     </div>
                                                 </div>
                                             </div>
@@ -180,13 +180,13 @@ const PopularCities = () => {
                                                         data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_price_%22%2C%22to%22%3A%22innerHTML%22%7D%5D"
                                                         className="card-one-sell-price"
                                                     >
-                                                        $&nbsp;240.00&nbsp;USD
+                                                        $&nbsp;451.00&nbsp;USD
                                                     </div>
                                                     <div
                                                         data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_compare_at_price_7dr10dr%22%2C%22to%22%3A%22innerHTML%22%7D%5D"
                                                         className="text-strike-through"
                                                     >
-                                                        $&nbsp;280.00&nbsp;USD
+                                                        $&nbsp;501.00&nbsp;USD
                                                     </div>
                                                 </div>
                                             </div>
@@ -233,9 +233,9 @@ const PopularCities = () => {
                                 <div className="w-layout-vflex card-three-text-box">
                                     <div className="w-layout-hflex card-three-price">
                                         <div className="small-text text-strike-through text-light-gray">
-                                            $234.00
+                                            $365.00
                                         </div>
-                                        <div className="heading-style-h4 text-color-white">$214.00</div>
+                                        <div className="heading-style-h4 text-color-white">$449.00</div>
                                     </div>
                                     <div className="offer-small-text">offer price per person</div>
                                 </div>
@@ -286,13 +286,13 @@ const PopularCities = () => {
                                                         data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_price_%22%2C%22to%22%3A%22innerHTML%22%7D%5D"
                                                         className="card-one-sell-price"
                                                     >
-                                                        $&nbsp;180.00&nbsp;USD
+                                                        $&nbsp;311.00&nbsp;USD
                                                     </div>
                                                     <div
                                                         data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_compare_at_price_7dr10dr%22%2C%22to%22%3A%22innerHTML%22%7D%5D"
                                                         className="text-strike-through"
                                                     >
-                                                        $&nbsp;200.00&nbsp;USD
+                                                        $&nbsp;368.00&nbsp;USD
                                                     </div>
                                                 </div>
                                             </div>
@@ -326,13 +326,13 @@ const PopularCities = () => {
                                                         data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_price_%22%2C%22to%22%3A%22innerHTML%22%7D%5D"
                                                         className="card-one-sell-price"
                                                     >
-                                                        $&nbsp;230.00&nbsp;USD
+                                                        $&nbsp;303.00&nbsp;USD
                                                     </div>
                                                     <div
                                                         data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_compare_at_price_7dr10dr%22%2C%22to%22%3A%22innerHTML%22%7D%5D"
                                                         className="text-strike-through"
                                                     >
-                                                        $&nbsp;250.00&nbsp;USD
+                                                        $&nbsp;348.00&nbsp;USD
                                                     </div>
                                                 </div>
                                             </div>
@@ -366,13 +366,13 @@ const PopularCities = () => {
                                                         data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_price_%22%2C%22to%22%3A%22innerHTML%22%7D%5D"
                                                         className="card-one-sell-price"
                                                     >
-                                                        $&nbsp;167.00&nbsp;USD
+                                                        $&nbsp;325.00&nbsp;USD
                                                     </div>
                                                     <div
                                                         data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_compare_at_price_7dr10dr%22%2C%22to%22%3A%22innerHTML%22%7D%5D"
                                                         className="text-strike-through"
                                                     >
-                                                        $&nbsp;190.00&nbsp;USD
+                                                        $&nbsp;371.00&nbsp;USD
                                                     </div>
                                                 </div>
                                             </div>

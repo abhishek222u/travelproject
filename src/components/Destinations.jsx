@@ -1502,7 +1502,7 @@ const Destinations = () => {
                                 transformStyle: "preserve-3d"
                             }}
                         >
-                            Find your perfect travel package
+                            find your perfect travel package
                         </h2>
                         <div
                             data-w-id="ff0385ae-cfbf-ca85-8978-184c11f0b12a"

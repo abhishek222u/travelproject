@@ -19,7 +19,7 @@ const VisaAssistant = () => {
                 {/* Header Section */}
                 <div className="text-center">
                     <h2 className="text-4xl font-bold text-gray-900 sm:text-5xl tracking-tight">
-                        Simplify your <span className="text-[#046cb8]">visa journey</span>
+                        simplify your <span className="text-[#046cb8]">visa journey</span>
                     </h2>
                     <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
                         navigate the visa process with ease. our expert team provides personalized support, from application to approval, ensuring a seamless experience.

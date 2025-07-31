@@ -43,7 +43,7 @@ const PopularCities = () => {
                                 transformStyle: "preserve-3d"
                             }}
                         >
-                            Most popular tours
+                            most popular tours
                         </h2>
                         <p
                             data-w-id="ff0385ae-cfbf-ca85-8978-184c11f0b506"
@@ -55,7 +55,7 @@ const PopularCities = () => {
                                 transformStyle: "preserve-3d"
                             }}
                         >
-                            🌍 Discover Our Most Loved Destinations Around the World!
+                            🌍 discover Our Most Loved Destinations Around the World!
                         </p>
                     </div>
                     <div

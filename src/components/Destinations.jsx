@@ -1223,7 +1223,7 @@ const subTabs = [
 ]
 
 // DestinationCard Component (keeping the same design)
-const DestinationCard = ({ destination, category }) => {
+const DestinationCard = ({ destination }) => {
     const { image, srcSet, title, price, originalPrice, rating, duration, featured, discount } = destination
 
     // Extract country name from title for routing
@@ -1502,7 +1502,7 @@ const Destinations = () => {
                                 transformStyle: "preserve-3d"
                             }}
                         >
-                            find your perfect travel package
+                            Find your perfect travel package
                         </h2>
                         <div
                             data-w-id="ff0385ae-cfbf-ca85-8978-184c11f0b12a"

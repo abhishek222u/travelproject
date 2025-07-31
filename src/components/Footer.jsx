@@ -197,7 +197,7 @@ const Footer = () => {
                         </a>
                     </div> */}
                     <div className="footer-description" style={{ color: 'white', fontSize: '0.95rem', textAlign: 'center', lineHeight: '1.6' }}>
-                        tripofai is a travel brand by Housofai Technologies Private Limited, committed to delivering intelligent, seamless, and personalized travel experiences powered by advanced technology.
+                        tripofai is a travel brand by Housofai Technologies Private Limited, committed to delivering intelligent, seamless, and personalized travel experiences powered by advanced technology.
                     </div>
                 </div>
             </section>
